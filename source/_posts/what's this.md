@@ -2,6 +2,7 @@
 
 title: 傅里叶变换
 categories:  傅里叶变换
+date: 2019-09-03
 tags: [数学] 
 description: 傅里叶变换，拉普斯变换，z变换
 

@@ -2,8 +2,18 @@
 title: maven多配置
 categories: java 
 tags: [maven,java] 
-description: 开发的时候总会遇到不同环境需要的配置文件是不同的，maven提供的多配置文件打包所需要的plugin，配置一下即可搞定不同环境打包不同配置。
+date: 2018-10-15
+cover: https://mysticalyu.gitee.io/pic/img/73vek3.jpg
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/73vek3.jpg)
+
+开发的时候总会遇到不同环境需要的配置文件是不同的，maven提供的多配置文件打包所需要的plugin，配置一下即可搞定不同环境打包不同配置。
+
+
+
+ <!-- more -->
+
 
 
 **resources下面增加多配置的文件夹；如下：**

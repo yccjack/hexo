@@ -3,9 +3,20 @@
 title: HTTPD
 categories: 服务器 
 tags: [服务器] 
-description: Apache HTTP Server（简称Apache或httpd）是Apache软件基金会的一个开放源代码的网页服务器软件，旨在为unix，windows等操作系统中提供开源httpd服务。由于其安全性、高效性及可扩展性，被广泛使用，自1996年4月以来，Apache一直是Internet上最流行的HTTP服务器。它快速、可靠并且可通过简单的API扩充，将Perl／Python等解释器等编译到httpd的相关模块中。
+date: 2018-08-16
+cover: https://mysticalyu.gitee.io/pic/img/20200407235818-www-ycfcg-com-.jpg
 
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/20200407235818-www-ycfcg-com-.jpg)
+
+Apache HTTP Server（简称Apache或httpd）是Apache软件基金会的一个开放源代码的网页服务器软件，旨在为unix，windows等操作系统中提供开源httpd服务。由于其安全性、高效性及可扩展性，被广泛使用，自1996年4月以来，Apache一直是Internet上最流行的HTTP服务器。它快速、可靠并且可通过简单的API扩充，将Perl／Python等解释器等编译到httpd的相关模块中。
+
+
+
+ <!-- more -->
+
+
 
 # [HTTPD] Linux（Apache）Httpd服务器安装，启动及httpd.conf配置详解
 

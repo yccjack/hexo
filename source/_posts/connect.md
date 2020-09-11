@@ -2,10 +2,21 @@
 
 title: 浏览器
 categories: 网络是怎么连接的
-tags: [网络是怎么连接的] 
-description: 在浏览器输入网址，到底发生了什么...
+tags: [计算机网络] 
+date: 2020-01-11
+cover: https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg
 
 ---
+
+
+
+![](https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg)
+
+   从输入一个地址开始，它可以是这样的 <font color=#2cede4> www.baidu.com</font>, 也可以是这样的 **https://admin:admin@www.gschaos.club:80/dir/file1.html**, 咋一看好像都能看懂,而且还知道这么输入会得到什么,更言之还能断点调试一下; 可是输入一个网址到底发生了什么？
+
+
+
+ <!-- more -->
 
 
 

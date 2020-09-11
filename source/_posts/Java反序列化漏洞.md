@@ -2,13 +2,24 @@
 
 title: Java反序列化漏洞
 categories: java
-tags: [java] 
-description: Lib之过？Java反序列化漏洞通用利用分析    转自：https://blog.chaitin.cn/2015-11-11_java_unserialize_rce/
+tags: [java]
+date: 2018-08-19 00:00:00
+cover: https://mysticalyu.gitee.io/pic/img/20200605013054357.jpg
 
 ---
 
+![](https://mysticalyu.gitee.io/pic/img/20200605013054357.jpg)
+
+Lib之过？Java反序列化漏洞通用利用分析    转自：https://blog.chaitin.cn/2015-11-11_java_unserialize_rce/
+
+
+
+ <!-- more -->
+
+
 
 ## 背景
+
 2015年11月6日，FoxGlove Security安全团队的@breenmachine 发布的一篇博客[3]中介绍了如何利用Java反序列化漏洞，来攻击最新版的WebLogic、WebSphere、JBoss、Jenkins、OpenNMS这些大名鼎鼎的Java应用，实现远程代码执行。
 
 

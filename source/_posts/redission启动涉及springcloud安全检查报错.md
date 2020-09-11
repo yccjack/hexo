@@ -2,6 +2,8 @@
 title: redissionq启动报错涉及安全检查问题排查
 categories: java
 tags: [java] 
+date: 2020-07-16
+cover: https://mysticalyu.gitee.io/pic/img/cg-1.jpg
 description: redissionq启动报错涉及安全检查问题排查
 ---
 

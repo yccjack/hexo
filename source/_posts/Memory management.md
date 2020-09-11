@@ -3,9 +3,18 @@
 title: 存储器管理
 categories:  存储器管理
 tags: [操作系统] 
-description: 存储器管理
+date: 2019-04-06
+cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/a-i-20.jpg)
+
+
+
+ <!-- more -->
+
+
 
 ## 存储器管理
 

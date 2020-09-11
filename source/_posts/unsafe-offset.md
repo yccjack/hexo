@@ -3,12 +3,25 @@ top: true
 title: UNSAFE和Java 内存布局
 categories: [java]
 mathjax: true
+date: 2019-11-15
+cover: https://mysticalyu.gitee.io/pic/img/huifeng-huang-upset1-5k.jpg
+sticky: 99
 author:
   name: staconfree
   avatar: https://cdn2.jianshu.io/assets/default_avatar/15-a7ac401939dd4df837e3bbf82abaa2a8.jpg
   url: https://www.jianshu.com/p/cb5e09facfee
 description: 在看CAS中经常会遇到unsafe.compareAndSwapInt(this, stateOffset, expect, update);很久很久以前看着就当眼熟;现在再看，结果对这个偏移量完全未知，于是有了这篇文章
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/huifeng-huang-upset1-5k.jpg)
+
+在看CAS中经常会遇到unsafe.compareAndSwapInt(this, stateOffset, expect, update);很久很久以前看着就当眼熟;现在再看，结果对这个偏移量完全未知，于是有了这篇文章
+
+
+
+<!-- more -->
+
+
 
 # UNSAFE和Java 内存布局（深入理解：锁/反射/线程挂起/内存回收等）
 

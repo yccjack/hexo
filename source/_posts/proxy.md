@@ -3,9 +3,18 @@
 title: 动态代理在代码中的应用
 categories: java
 tags: [java] 
-description: 动态代理在代码中的应用
+date: 2019-01-11
+cover: https://mysticalyu.gitee.io/pic/img/cat-lazy-fengmian.jpg
 
 ---
+![](https://mysticalyu.gitee.io/pic/img/cat-lazy-fengmian.jpg)
+
+
+
+<!-- more -->
+
+
+
 ## <font face="楷体" color=#FF0000>动态代理在代码中的应用.</font>
 
  <font color=#008000  >先看一段代码</font> 

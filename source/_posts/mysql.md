@@ -3,10 +3,22 @@
 title: MySQL
 categories: 数据库 
 tags: [MySQL] 
-description: 高性能MYSQL书本中总结的一些注意项，部分转载别人的博客，忘记了地址，如有发现原地址请联系增加地址：568166723
+date: 2018-10-11
+cover: https://mysticalyu.gitee.io/pic/img/ayato-lin-aaa.jpg
 
 ---
+![](https://mysticalyu.gitee.io/pic/img/ayato-lin-aaa.jpg)
+
+高性能MYSQL书本中总结的一些注意项，部分转载别人的博客，忘记了地址，如有发现原地址请联系增加地址：568166723
+
+
+
+ <!-- more -->
+
+
+
 # 一、MySQL架构与历史
+
 ## A.并发控制
 1.共享锁（shared lock，读锁）：共享的，相互不阻塞的
 

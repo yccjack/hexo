@@ -1,10 +1,19 @@
 ---
 title: sonarQube 
 categories: 工具 
-tags: [sonarQube] 
-description: SonarQube 是一款用于代码质量管理的开源工具，它主要用于管理源代码的质量。 通过插件形式，可以支持众多计算机语言，比如 java, C#, go，C/C++, PL/SQL, Cobol, JavaScrip, Groovy 等。sonar可以通过PMD,CheckStyle,Findbugs等等代码规则检测工具来检测你的代码，帮助你发现代码的漏洞，Bug，异味等信息。以下转自自己的CSDN博客：（关于截图背景颜色请无https://blog.csdn.net/qq_17238449/article/details/97392513
+tags: [sonarQube]
+date: 2018-11-14 
+cover: https://mysticalyu.gitee.io/pic/img/daehwan-jang-pose2.jpg
 
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/daehwan-jang-pose2.jpg)
+
+SonarQube 是一款用于代码质量管理的开源工具，它主要用于管理源代码的质量。 通过插件形式，可以支持众多计算机语言，比如 java, C#, go，C/C++, PL/SQL, Cobol, JavaScrip, Groovy 等。sonar可以通过PMD,CheckStyle,Findbugs等等代码规则检测工具来检测你的代码，帮助你发现代码的漏洞，Bug，异味等信息。以下转自自己的CSDN博客：（关于截图背景颜色请无https://blog.csdn.net/qq_17238449/article/details/97392513
+
+
+
+<!-- more -->
 
 
 

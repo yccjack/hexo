@@ -3,12 +3,21 @@
 title: Disruptor
 categories:  java
 tags: [java] 
-description: 应该知道的高性能无锁队列Disruptor;
+date: 2019-02-03
+cover: https://mysticalyu.gitee.io/pic/img/20200407235645-www-ycfcg-com-4.jpg
 mathjax: true
 sidebar: [grid, toc, tags] # 放置任何你想要显示的侧边栏部件
 ---
 
 
+
+![](https://mysticalyu.gitee.io/pic/img/20200407235645-www-ycfcg-com-4.jpg)
+
+应该知道的高性能无锁队列Disruptor;
+
+
+
+ <!-- more -->
 
 
 

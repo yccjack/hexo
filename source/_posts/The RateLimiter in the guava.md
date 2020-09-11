@@ -3,12 +3,19 @@
 title: 限流原理解读之guava中的RateLimiter
 categories:  RateLimiter限流
 tags: [Guava] 
-description: 缓存，降级和限流是大型分布式系统中的三把利剑。目前限流主要有漏桶和令牌桶两种算法。
+date: 2019-10-19
+cover: https://mysticalyu.gitee.io/pic/img/eric-lee-psb.jpg
+
 
 ---
 
+![](https://mysticalyu.gitee.io/pic/img/eric-lee-psb.jpg)
 
-[TOC]
+
+
+<!-- more -->
+
+
 
 
 # <font color= #EE82EE>限流原理解读之guava中的RateLimiter</font>

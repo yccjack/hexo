@@ -2,10 +2,19 @@
 
 title: Spring IOC 的世界
 categories: Spring
-tags: [Spring,java] 
-description: 4 张图带你读懂 Spring IOC 的世界;转自：http://cmsblogs.com/?p=4045
+tags: [Spring,java]
+date: 2019-09-19 
+cover: https://mysticalyu.gitee.io/pic/img/-dkv01-02.jpg
 
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/-dkv01-02.jpg)
+
+
+
+<!-- more -->
+
+
 
 # bean 的转换过程
 

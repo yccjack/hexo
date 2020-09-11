@@ -1,0 +1,7 @@
+- class_name: 友链
+  class_desc: 有朋友么。自信点，没有
+  link_list:
+    - name: 一滴水的眼泪
+      link: https://hscp.love/
+      avatar: https://hscp.love/images/avatar.jpg
+      descr: 一滴水的眼泪

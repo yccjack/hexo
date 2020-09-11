@@ -2,9 +2,17 @@
 top: true
 title: java虚拟机内存模型
 categories: [java]
+date: 2019-12-04
 mathjax: true
-description: java虚拟机内存模型,以下是省略号，作为补齐元素.......................................................................
+cover: https://mysticalyu.gitee.io/pic/img/huifeng-huang-pose-cl05.jpg
+description: java虚拟机内存模型
 ---
+
+![](https://mysticalyu.gitee.io/pic/img/huifeng-huang-pose-cl05.jpg)
+
+
+
+<!-- more -->
 
 
 

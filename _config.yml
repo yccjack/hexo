@@ -15,7 +15,7 @@ timezone: Asia/Shanghai #中国的时区，不要乱改城市
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://gschaos.club
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 # 网站图标，更多尺寸等图标请使用import方式批量导入
 favicon: https://gschaos.club/ico/favicon.ico
@@ -73,7 +73,7 @@ pagination_dir: page
 #Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: volantis
+theme: butterfly #volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -94,6 +94,11 @@ widgets:
 - tag
 - tagcloud
 
+#SEO
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
 # Duoshuo
 #duoshuo_shortname: fl-it-ebooks
 #fancybox: true
@@ -105,7 +110,7 @@ lazyload:
 symbols_count_time:
   symbols: true #是否统计字数
   time: true #是否统计阅读时长
-  total_symbols: false #是否统计总字数
+  total_symbols: true #是否统计总字数
   total_time: true #是否统计总阅读时长
 # Extensions
 # ## Plugins: http://hexo.io/plugins/

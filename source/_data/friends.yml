@@ -1,0 +1,9 @@
+- group: 友人
+  description: 友人
+  items:
+    - title: 一滴水的眼泪
+      avatar: https://hscp.love/images/avatar.jpg
+      url: https://hscp.love/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: # 描述

@@ -1,11 +1,22 @@
 ---
 title: 如何在YouTube Api限额的情况下获取更多视频
 categories:  java
-tags: [java] 
-description: 如何在YouTube Api限额的情况下获取更多视频
+tags: [java]
+date: 2019-12-28 
 mathjax: true
+cover: https://mysticalyu.gitee.io/pic/img/jonathan-romeo-orihime-v2.jpg
 sidebar: [grid, toc, tags] # 放置任何你想要显示的侧边栏部件
 ---
+
+ ![](https://mysticalyu.gitee.io/pic/img/jonathan-romeo-orihime-v2.jpg)
+
+如何在YouTube Api限额的情况下获取更多视频
+
+
+
+<!-- more -->
+
+
 
 # YouTube视频
 

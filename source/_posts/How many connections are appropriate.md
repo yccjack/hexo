@@ -3,9 +3,21 @@
 title: 数据库连接池到底应该设多大？这篇文章可能会颠覆你的认知
 categories:  数据库
 tags: [数据库] 
-description: 数据库连接池的配置是开发者们常常搞出坑的地方，在配置数据库连接池时，有几个可以说是和直觉背道而驰的原则需要明确。
-
+date: 2019-08-07
+cover: https://mysticalyu.gitee.io/pic/img/20200407235705-www-ycfcg-com-3.jpg
 ---
+
+
+
+![](https://mysticalyu.gitee.io/pic/img/20200407235705-www-ycfcg-com-3.jpg)
+
+数据库连接池的配置是开发者们常常搞出坑的地方，在配置数据库连接池时，有几个可以说是和直觉背道而驰的原则需要明确。
+
+
+
+ <!-- more -->
+
+
 
 本文内容95%译自这篇文章：[https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing](https://link.jianshu.com/?t=https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing)
 
