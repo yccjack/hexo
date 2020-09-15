@@ -3,7 +3,7 @@
 title: MySQL-2
 categories: 数据库 
 tags: [MySQL]
-date: 2018-10-11 
+date: 2019-10-11 
 cover: https://mysticalyu.gitee.io/pic/img/blue-berry-2.jpg
 
 ---
@@ -109,14 +109,18 @@ cover: https://mysticalyu.gitee.io/pic/img/blue-berry-2.jpg
 >- 枚举的顺序是按照背地里的数字来排序的，因此，你的Order by语句可能得不到按字符串排序的结果。解决方案就是声明的时候就把字符串排好序，枚举常量对应的数字是和声明时的顺序有关的。还有一种方案是使用如下FIELD语句：
 >
 >- ```csharp
-> SELECT e FROM enum_test ORDER BY FIELD(e,'apple','dog','fish');
-> ```
-> ```
+>  SELECT e FROM enum_test ORDER BY FIELD(e,'apple','dog','fish');
+>  ```
+>```
 >
-> ```
+>```
+>
+>```
 >- ENUM和CHAR(VARCHAR)类型关联查询，会慢一些，因此，假如预先知道某列需要与CHAR类型关联，那么就不应该将该列设置为ENUM类型
 >
 >- ENUM类型的列可有效缩小表所占的空间，书中写可缩小1/3
+>```
+>
 >```
 >
 >```

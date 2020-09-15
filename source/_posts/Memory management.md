@@ -3,7 +3,7 @@
 title: 存储器管理
 categories:  存储器管理
 tags: [操作系统] 
-date: 2019-04-06
+date: 2020-04-06
 cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 ---

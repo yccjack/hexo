@@ -3,7 +3,7 @@
 
 
 title: PicGo + Gitee(码云)实现markdown图床
-categories:  图床
+categories: 图床
 tags: [图床] 
 date: 2020-09-07
 cover: https://mysticalyu.gitee.io/pic/img/euginnx-_wu-09.jpg
@@ -39,9 +39,9 @@ PicGo + Gitee(码云)实现markdown图床
 
 如果速度慢，点击此地址下载：
 
-mac:  [PicGo-2.3.0-beta.3-mac](https://gschaos.club/down/PicGo-2.3.0-beta.3-mac.zip )
+mac:  https://gschaos.club/down/PicGo-2.3.0-beta.3-mac.zip
 
-win:  [PicGo-Setup-2.3.0-beta.3.exe](https://gschaos.club/down/PicGo-Setup-2.3.0-beta.3.exe)
+win:  https://gschaos.club/down/PicGo-Setup-2.3.0-beta.3.exe
 
 
 
@@ -65,9 +65,7 @@ win:  [PicGo-Setup-2.3.0-beta.3.exe](https://gschaos.club/down/PicGo-Setup-2.3.0
 
 ------
 
-## 2. 建立gitee（码云）图床库
-
-注册码云的方法很简单，网站引导都是中文，不多说了，我们直接建立自己的图床库。
+## 2. 建立图床库
 
 ### 点击右上角的+号，新建仓库
 
@@ -83,19 +81,11 @@ win:  [PicGo-Setup-2.3.0-beta.3.exe](https://gschaos.club/down/PicGo-Setup-2.3.0
 2.  其次将仓库设为公开
 3. 勾选使用Readme文件初始化这个仓库
 
-**这个选项勾上，这样码云会自动给你的仓库建立master分支，这点很重要!!!** 我因为这点折腾了很久，因为使用github做图床picgo好像会自动帮你生成master分支，而picgo里的gitee插件不会帮你自动生成分支。
 
 
+![image-20200911135935950](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200911135935950.png)
 
-![image-20200911093750278](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200911093750278.png)
-
-
-
-点击创建进入下一步
-
-
-
-
+点击下一步完成创建
 
 ------
 
@@ -107,9 +97,9 @@ win:  [PicGo-Setup-2.3.0-beta.3.exe](https://gschaos.club/down/PicGo-Setup-2.3.0
 
 ![image-20200911093830243](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200911093830243.png)
 
-- repo：用户名/仓库名称，比如我自己的仓库leonG7/blogImage，找不到的可以直接复制仓库的url,<font color=red>复制浏览器的仓库地址，而不是页面左上角显示的，容易出现大小写问题</font>
+- repo：用户名/仓库名称，比如我自己的仓库MysticalYu/pic，找不到的可以直接复制仓库的url,<font color=red>复制浏览器的仓库地址，而不是页面左上角显示的，容易出现大小写问题</font>
 
-![image-20200911093907929](../../AppData/Roaming/Typora/typora-user-images/image-20200911093907929.png)
+![image-20200911093907929](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200911093907929.png)
 
 - branch：分支，这里写上master
 - token：填入码云的私人令牌
@@ -146,9 +136,7 @@ win:  [PicGo-Setup-2.3.0-beta.3.exe](https://gschaos.club/down/PicGo-Setup-2.3.0
 
 
 
-4. 每次上传后需要
-
-### 现在保存你刚才的配置，然后将它设置为默认图床，大功告成。
+### 保存，完成即可。
 
 
 

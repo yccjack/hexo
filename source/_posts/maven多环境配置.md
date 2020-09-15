@@ -2,7 +2,7 @@
 title: maven多配置
 categories: java 
 tags: [maven,java] 
-date: 2018-10-15
+date: 2019-10-15
 cover: https://mysticalyu.gitee.io/pic/img/73vek3.jpg
 ---
 

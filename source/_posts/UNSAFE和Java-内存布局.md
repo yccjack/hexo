@@ -1,6 +1,6 @@
 ---
 top: true
-title: UNSAFE和Java 内存布局
+title: 并发编程之Atomic&Unsafe魔法类详解
 categories: [java]
 date: 2019-12-12
 mathjax: true

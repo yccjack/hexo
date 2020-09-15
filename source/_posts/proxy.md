@@ -3,7 +3,7 @@
 title: 动态代理在代码中的应用
 categories: java
 tags: [java] 
-date: 2019-01-11
+date: 2020-01-11
 cover: https://mysticalyu.gitee.io/pic/img/cat-lazy-fengmian.jpg
 
 ---

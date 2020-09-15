@@ -2,7 +2,7 @@
 title: SimpleTuning
 categories: java
 tags: [java]
-date: 2020-01-01 
+date: 2020-07-01 
 sticky: 100
 cover: https://mysticalyu.gitee.io/pic/img/chaunkm-china-a1.jpg
 description: Simple JVM  Tuning simulation,一些怪异的面试题，深入java虚拟机部分笔记以及书本部分资料摘抄。
