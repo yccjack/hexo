@@ -89,7 +89,7 @@ description: 解决jar包冲突的简单办法-- 在使用log4j.properties时，
 
 运行项目会出现一下冲突：
 
-![image-20200519094027451](/images/storage/image-20200519094027451.png)
+![image-20200519094027451](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200519094027451.png)
 
 这里提示org-slf4j 冲突； 使用mvn dependency:tree 查看依赖树：
 
@@ -156,7 +156,7 @@ tree.txt:(信息比较多，就截取一点。)
 复制mvn dependency:tree -Dincludes=org.slf4j
 ```
 
-![image-20200519112242971](/images/storage/image-20200519112242971.png)
+![image-20200519112242971](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200519112242971.png)
 
 从图中发现org-slf4j的版本是一样的，先不管这个，先排除所有试试；
 
@@ -180,7 +180,7 @@ tree.txt:(信息比较多，就截取一点。)
 
 再次运行 如果发现依然报错：
 
-![image-20200519112516682](/images/storage/image-20200519112516682.png)
+![image-20200519112516682](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200519112516682.png)
 
 再次寻找冲突问题：
 
@@ -192,7 +192,7 @@ tree.txt:(信息比较多，就截取一点。)
 复制mvn dependency:tree -Dverbose -Dincludes=ch.qos.logback
 ```
 
-![image-20200519112939624](/images/storage/image-20200519112939624.png)
+![image-20200519112939624](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200519112939624.png)
 
 发现这个logback 1.2.3的包，将其排除：
 

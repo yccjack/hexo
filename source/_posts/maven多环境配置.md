@@ -18,7 +18,7 @@ cover: https://mysticalyu.gitee.io/pic/img/73vek3.jpg
 
 **resources下面增加多配置的文件夹；如下：**
 
-![](/images/storage/17H9FFPRJAVAC347UDD600FV8I.png)
+![](https://gitee.com/MysticalYu/pic/raw/master/hexo/17H9FFPRJAVAC347UDD600FV8I.png)
 
 ---
 apollo下的application.yml
@@ -174,9 +174,9 @@ seaweedfs:
 
 ```
 
-![](/images/storage/13LRJJGJA6I8CCIPC97GJQ265I.png)
+![](https://gitee.com/MysticalYu/pic/raw/master/hexo/13LRJJGJA6I8CCIPC97GJQ265I.png)
 
-![](/images/storage/38GIFCQ5RD2CLPBEFJAGEOQRN5.png)
+![](https://gitee.com/MysticalYu/pic/raw/master/hexo/38GIFCQ5RD2CLPBEFJAGEOQRN5.png)
 
 **打包时选择需要的配置勾选并取消另外一个profile即可打包对应的配置文件，同样也可以增加mvn 
 package -P apollo,!local 来使用需要的配置文件(jenkins打不同环境的包)**

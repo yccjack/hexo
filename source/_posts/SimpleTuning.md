@@ -3,6 +3,7 @@ title: SimpleTuning
 categories: java
 tags: [java]
 date: 2020-07-01 
+update: 2020-09-17
 sticky: 100
 cover: https://mysticalyu.gitee.io/pic/img/chaunkm-china-a1.jpg
 description: Simple JVM  Tuning simulation,一些怪异的面试题，深入java虚拟机部分笔记以及书本部分资料摘抄。
@@ -188,7 +189,7 @@ Simple JVM  Tuning simulation
 >
 > > 在编译程序代码的时候，栈帧中需要多大的局部变量表，多深的操作数栈都已经完全确定了。  因此一个栈帧需要分配多少内存，不会受到程序运行期变量数据的影响，而仅仅取决于具体的虚拟机实现。
 
-![20180121103152636](/images/storage/20180121103152636.png)
+![20180121103152636](https://gitee.com/MysticalYu/pic/raw/master/hexo/20180121103152636.png)
 
 ### 局部变量表
 
@@ -359,9 +360,9 @@ woman say hello
 
    熟悉多态的人对上面的结果不会感到惊讶。下面使用javap命令输出这段代码的字节码。
 
-![img](/images/storage/592743-20160322110744917-900187291.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/592743-20160322110744917-900187291.png)
 
-![img](/images/storage/592743-20160322110827979-422248272.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/592743-20160322110827979-422248272.png)
 
 ​    如上所示，方法的调用指令都使用了invokevirtual指令，invokevirtual指令的运行时解析过程大致分为以下几个步骤。
 
@@ -512,3 +513,49 @@ javap提示这段代码需要深度为2的操作数栈和4个Slot的局部变量
 
 上面的执行过程仅仅是一种概念模型，虚拟机最终会对执行过程做一些优化来提高性能，实际运行过程不一定完全符合概念模型的描述......更准确地说，实际情况会和上面的字节码进行优化，例如，在HotSpot虚拟机中，有很多以“fast_”开头的非标准字节码指令用于合并、替换输入的字节码以提升解释执行性能，而即时编译器的优化手段更加花样繁多。
 不过，我们从这段程序的执行中也可以看出栈结构指令集的一般运行过程，整个运算过程的中间变量都以操作数栈的出栈、入栈为信息交换途径，符合我们在前面分析的特点。
+
+
+
+##  netty
+
+在 Netty 中,通过 bootstrap.bind(PORT).sync().channel()方法绑定服务端端口,并不是在调用方的线程(示例为 main 线程)中执行,而是通过 NioEventLoop 线程执行。
+
+![image-20200917223020699](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200917223020699.png)
+
+netty异步线程启动并非守护线程，在main方法中执行异步绑定端口后即main方法结束，JVM不会结束，需要等到netty异步线程结束或者调用
+
+```
+worker.shutdownGracefully().sync();
+boss.shutdownGracefully().sync();
+```
+
+结束netty的进程来结束JVM。
+
+### 实际项目中的优化策略
+
+初学者很容易出现上述案例中的错误用法，但在实际项目中，很少通过 main 函数直接调用 Netty 服务端，业务往往是通过某种容器（例如 Tomcat、SpringBoot 等）拉起进程，然后通过容器启动来初始化各种业务资源。因此，不需要担心 Netty 服务端意外退出，启动 Netty 服务端比较容易犯的错误是采用同步的方式调用 Netty，导致初始化 Netty 服务端的业务线程被阻塞，举例如下。
+
+错误用法：这种用法会导致调用方的线程一直被阻塞，直到服务端监听句柄关闭。
+
+◎ 初始化 Netty 服务端。
+
+◎ 同步阻塞等待服务端端口关闭。
+
+◎ 释放 I/O 线程资源和句柄等。
+
+◎ 调用方线程被释放。
+
+正确用法：服务端启动之后注册监听器监听服务端句柄关闭事件，待服务端关闭之后异步调用 shutdownGracefull 释放资源，这样调用方线程就可以快速返回，不会被阻塞。
+
+◎ 初始化 Netty 服务端。
+
+◎ 绑定监听端口。
+
+◎ 向 CloseFuture 注册监听器，在监听器中释放资源。
+
+◎ 调用方线程返回。
+
+很多开发者习惯了写同步代码，在使用 Netty 之后仍然采用同步阻塞的方式来调用 Netty，尽管功能上也可以正常使用，但是违背了 Netty 的异步设计理念，线程执行效率并不高。
+
+当系统退出时，建议通过调用 EventLoopGroup 的 shutdownGracefully 来完成内存队列中积压消息的处理、链路的关闭和 EventLoop 线程的退出，以实现停机不中断业务（备注：单靠 Netty 框架实际上无法 100% 保证，需要应用配合来实现）。
+

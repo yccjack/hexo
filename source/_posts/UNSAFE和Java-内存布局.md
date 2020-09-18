@@ -46,7 +46,7 @@ cover: https://mysticalyu.gitee.io/pic/img/jeong-hyun-jun-front.jpg
 
 如下图
 
-![img](/images/storage/微信截图_20190816141731.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816141731.png)
 
 原因是有可能多个处理器同时从各自的缓存中读取变量i，分别进行加一操作，然后分别写入系统内存当中。那么想要保证读改写共享变量的操作是原子的，就必须保证CPU1读 改写共享变量的时候，CPU2不能操作缓存了该共享变量内存地址的缓存。
 
@@ -176,7 +176,7 @@ public class Unsafe { // 单例对象
 
 Unsafe提供的API大致可分为内存操作、CAS、Class相关、对象操作、线程调度、系统信息获取、内存屏障、数组操作等几类，下面将对其相关方法和应用场景进行详细介绍。
 
-![img](/images/storage/微信截图_20190816150855.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816150855.png)
 
 - 1、内存操作
 
@@ -215,7 +215,7 @@ DirectByteBuffer是Java用于实现堆外内存的一个重要类，通常用在
 
 下图为DirectByteBuffer构造函数，创建DirectByteBuffer的时候，通过Unsafe.allocateMemory分配内存、Unsafe.setMemory进行内存初始化，而后构建Cleaner对象用于跟踪DirectByteBuffer对象的垃圾回收，以实现当DirectByteBuffer被垃圾回收时，分配的堆外内存一起被释放。
 
-![img](/images/storage/微信截图_20190816152128.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816152128.png)
 
 - 2、CAS相关
 
@@ -239,11 +239,11 @@ public final native boolean compareAndSwapLong(Object var1,long var2,long var4,l
 
 如下图所示，AtomicInteger的实现中，静态字段valueOffset即为字段value的内存偏移地址，valueOffset的值在AtomicInteger初始化时，在静态代码块中通过Unsafe的objectFieldOffset方法获取。在AtomicInteger中提供的线程安全方法中，通过字段valueOffset的值可以定位到AtomicInteger对象中value的内存地址，从而可以根据CAS实现对value字段的原子操作。
 
-![img](/images/storage/微信截图_20190816152508.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816152508.png)
 
 下图为某个AtomicInteger对象自增操作前后的内存示意图，对象的基地址 baseAddress=“0x110000”，通过baseAddress+valueOffset得到value的内存地址valueAddress=“0x11000c”；然后通过CAS进行原子性的更新操作，成功则返回，否则继续重试，直到更新成功为止。
 
-![img](/images/storage/微信截图_20190816152544.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816152544.png)
 
 - 3、线程调度
 
@@ -288,10 +288,10 @@ public native void fullFence();
 
 在Java 8中引入了一种锁的新机制——StampedLock，它可以看成是读写锁的一个改进版本。StampedLock提供了一种乐观读锁的实现，这种乐观读锁类似于无锁的操作，完全不会阻塞写线程获取写锁，从而缓解读多写少时写线程“饥饿”现象。由于StampedLock提供的乐观读锁不阻塞写线程获取读锁，当线程共享变量从主内存load到线程工作内存时，会存在数据不一致问题，所以当使用StampedLock的乐观读锁时，需要遵从如下图用例中使用的模式来确保数据的一致性。
 
-![img](/images/storage/微信截图_20190816153050.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816153050.png)
 
 如上图用例所示计算坐标点Point对象，包含点移动方法move及计算此点到原点的距离的方法distanceFromOrigin。在方法distanceFromOrigin中，首先，通过tryOptimisticRead方法获取乐观读标记；然后从主内存中加载点的坐标值(x,y)；而后通过StampedLock的validate方法校验锁状态，判断坐标点(x,y)从主内存加载到线程工作内存过程中，主内存的值是否已被其他线程通过move方法修改，如果validate返回值为true，证明(x,y)的值未被修改，可参与后续计算；否则，需加悲观读锁，再次从主内存加载(x,y)的最新值，然后再进行距离计算。其中，校验锁状态这步操作至关重要，需要判断锁状态是否发生改变，从而判断之前copy到线程工作内存中的值是否与主内存的值存在不一致。
 
 下图为StampedLock.validate方法的源码实现，通过锁标记与相关常量进行位运算、比较来校验锁状态，在校验逻辑之前，会通过Unsafe的loadFence方法加入一个load内存屏障，目的是避免上图用例中步骤②和StampedLock.validate中锁状态校验运算发生重排序导致锁状态校验不准确的问题。
 
-![img](/images/storage/微信截图_20190816153213.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/微信截图_20190816153213.png)

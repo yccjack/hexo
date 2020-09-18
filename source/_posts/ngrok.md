@@ -21,7 +21,7 @@ ngrok是一个反向代理，它能够让你本地的web服务或tcp服务通过
 
   [ngrok](https://ngrok.com/)是一个反向代理，它能够让你本地的web服务或tcp服务通过公共的端口和外部建立一个安全的通道，使得外网可以访问本地的计算机服务。ngrok1.x开源，ngrok2.x不开源
 
-  ![ngrok](/images/storage/ngrok.png)
+  ![ngrok](https://gitee.com/MysticalYu/pic/raw/master/hexo/ngrok.png)
 
   ngrok的主要用途有以下几种：
 
@@ -38,7 +38,7 @@ ngrok是一个反向代理，它能够让你本地的web服务或tcp服务通过
 
   有域名之后，需要配置DNS的Host Records，将准备分配给ngrok服务器的域名解析到公网服务器IP地址，如下图所示：
 
-  ![image-20200824143715666](C:\Users\MysticalYcc\AppData\Roaming\Typora\typora-user-images\image-20200824143715666.png)
+  ![image-20200824143715666](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200824143715666.png)
 
   **使用泛域名，使其能解析子域名**
 
@@ -178,7 +178,7 @@ ngrok是一个反向代理，它能够让你本地的web服务或tcp服务通过
 
   回车后，看到这样一个界面，说明启动成功：
 
-  ![Online](/images/storage/online.png)
+  ![Online](https://gitee.com/MysticalYu/pic/raw/master/hexo/online.png)
 
   如果显示`reconnecting`说明连接有错，在运行时加入`-log=stdout`来进行debug。可能有以下几方面原因：
 

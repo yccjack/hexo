@@ -5,6 +5,7 @@ body: [article, grid, comments]
 valine:
   placeholder: 有什么想对我说的呢？
 sidebar: false
+aplayer: true
 ---
 
 ## 关于我
@@ -14,7 +15,6 @@ sidebar: false
 
 From Ycc
 
-个人简介：https://gschaos.club/introduction
 QQ: 568166723
 Email: 568166723@qq.com
 Phone: 15155137510

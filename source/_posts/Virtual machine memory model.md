@@ -22,7 +22,7 @@ description: java虚拟机内存模型
 
 # 虚拟机
 
-![img](https://img-blog.csdnimg.cn/20191119111545984.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191119111545984.png)
 
 
 同样的java代码在不同平台生成的机器码肯定是不一样的，因为不同的操作系统底层的硬件指令集是不同的。
@@ -37,7 +37,7 @@ description: java虚拟机内存模型
 
 # 虚拟机组成
 
-![img](https://img-blog.csdnimg.cn/20191125152256267.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125152256267.png)
 
 ## 栈
 我们先讲一下其中的一块内存区域栈，大家都知道栈是存储局部变量的，也是线程独有的区域，也就是每一个线程都会有自己独立的栈区域。
@@ -67,7 +67,7 @@ public static void main(String[] args) {
 
 大家都知道每个方法都有自己的局部变量，比如上图中<font color=#98F5FF>main</font>方法中的<font color=#FF6A6A>math</font>，<font color=#FF6A6A>compute</font>方法中的<font color=#98F5FF>a b c</font>，那么java虚拟机为了区分不同方法中局部变量作用域范围的内存区域，每个方法在运行的时候都会分配一块独立的栈帧内存区域，我们试着按上图中的程序来简单画一下代码执行的内存活动。
 
-![img](https://img-blog.csdnimg.cn/20191125161338493.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125161338493.png)
 
 
 
@@ -78,13 +78,13 @@ public static void main(String[] args) {
 **栈帧**
 那么栈帧内部其实不只是存放局部变量的，它还有一些别的东西，主要由四个部分组成。
 
-![img](https://img-blog.csdnimg.cn/2019112516224297.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/2019112516224297.png)
 
 
 
 那么要讲这个就会涉及到更底层的原理--字节码。我们先看下我们上面代码的字节码文件。
 
-![img](https://img-blog.csdnimg.cn/20191125164159994.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125164159994.png)
 
 
 
@@ -92,7 +92,7 @@ public static void main(String[] args) {
 
 jdk有自带一个<font color=#FFA500>javap</font>的命令，可以将上述class文件生成一种更可读的字节码文件。
 
-![img](https://img-blog.csdnimg.cn/20191125170812635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125170812635.png)
 
 
 
@@ -190,7 +190,7 @@ Code:
 
 这一步很简单，就是将1压入操作数栈 
 
-![img](https://img-blog.csdnimg.cn/20191125173802589.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125173802589.png)
 
 
 
@@ -205,7 +205,7 @@ Code:
 
 局部变量1，在我们代码中也就是第一个局部变量a，先给a在局部变量表中分配内存，然后将int类型的值，也就是目前唯一的一个1存入局部变量a
 
-![img](https://img-blog.csdnimg.cn/20191125174002271.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125174002271.png)
 
 
 
@@ -229,7 +229,7 @@ Code:
 
 
 
-![img](https://img-blog.csdnimg.cn/20191125175335780.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125175335780.png)
 
 4. 从局部变量1中装载int类型值
 
@@ -249,7 +249,7 @@ Code:
 
 这两个代码是将局部变量1和2，也就是a和b的值装载到操作数栈中
 
-![img](https://img-blog.csdnimg.cn/20191125195538208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125195538208.png)
 
 
 
@@ -263,7 +263,7 @@ Code:
 
 <font color=#FFA500>iadd</font>指令一执行，会将操作数栈中的1和2依次从栈底弹出并相加，然后把运算结果3在压入操作数栈底。
 
-![img](https://img-blog.csdnimg.cn/20191125195857649.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125195857649.png)
 
 
 
@@ -277,7 +277,7 @@ Code:
 
  这个指令就是将10压入栈
 
-![img](https://img-blog.csdnimg.cn/20191125200118182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125200118182.png)
 
 
 
@@ -291,7 +291,7 @@ Code:
 
 这里就类似上面的加法了，将3和10弹出栈，把结果30压入栈
 
-![img](https://img-blog.csdnimg.cn/20191125200401195.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125200401195.png)
 
 
 
@@ -306,7 +306,7 @@ Code:
 
 这里大家就不陌生了吧，和第二步第三步是一样的，将30存入局部变量3，也就是c
 
-![img](https://img-blog.csdnimg.cn/20191125200811132.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125200811132.png)
 
 
 
@@ -320,7 +320,7 @@ Code:
 
 这个前面也说了
 
-![img](https://img-blog.csdnimg.cn/20191125201027757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125201027757.png)
 
 11. 返回int类型值
 
@@ -342,7 +342,7 @@ Code:
 
 我们上面已经知道局部变量会存放在栈帧中的局部变量表中，那么<font color=#FFA500>main()</font>方法中的<font color=#FF6A6A>math</font>会存入其中，但是这里的math是一个对象，我们知道new出来的对象是存放在堆中的
 
-![img](https://img-blog.csdnimg.cn/20191125202605931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125202605931.png)
 
 
 
@@ -378,7 +378,7 @@ public static User user = new User();
 
 到这里我们就能意识到栈，堆，方法区之间都是有联系的。
 
-![img](https://img-blog.csdnimg.cn/20191125204225518.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191125204225518.png)
 
 栈中的局部变量，方法区中的静态变量，如果是对象类型的话都会指向堆中new出来中的对象，那么红色的联系代表什么呢？我们先来了解一下对象。
 
@@ -387,7 +387,7 @@ public static User user = new User();
 
 对象在内存中存储的布局可以分为3块区域：<font color=#1E90FF>对象头（Header）、实例数据（Instance Data）和对齐填充（Padding）</font>。下图是普通对象实例与数组对象实例的数据结构：
 
-![è¿éåå¾çæè¿°](https://img-blog.csdn.net/20170419212953720?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvenF6X3pxeg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![è¿éåå¾çæè¿°](https://gitee.com/MysticalYu/pic/raw/master/hexo/20170419212953720)
 
 **对象头**
 
@@ -474,7 +474,7 @@ private native void start0();
 ## 堆
 最后我们讲堆，堆是最重要的一块内存区域，我相信大部分人对堆都不陌生。但是对于它的内部结构，运作细节想要搞清楚也没那么简单。
 
-![img](https://img-blog.csdnimg.cn/20191126141228830.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126141228830.png)
 
 对于这个基本组成大家应该都有所了解，对就是由<font color=#FF69B4>年轻代</font>和<font color=#87CEFF>老年代</font>组成，年轻代又分为<font color=#EE82EE>伊甸园区</font>和<font color=#90EE90>survivor</font>区，survivor区中又有<font color=#EEA2AD>from区</font>和<font color=#FF7256>to区</font>.
 
@@ -486,7 +486,7 @@ private native void start0();
 
 ## GC
 
-![img](https://img-blog.csdnimg.cn/20191126142038375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126142038375.png)
 
 
 一个程序只要在运行，那么就不会不停的new对象，那么总有一刻Eden区会放满，那么一旦Eden区被放满之后，虚拟机会干什么呢？没错，就是gc，不过这里的gc属于<font color=#EE82EE>minor gc</font>，就是垃圾收集，来收集垃圾对象并清理的，那么什么是垃圾对象呢？
@@ -499,19 +499,19 @@ private native void start0();
 
 那么<font color=#EE82EE>GC Roots</font>根对象又是什么呢，<font color=#EE82EE>GC Roots</font>根就是判断一个对象是否可以回收的依据，只要能通过<font color=#EE82EE>GC Roots</font>根向下一直搜索能搜索到的对象，那么这个对象就不算垃圾对象，而可以作为<font color=#EE82EE>GC Roots</font>根的有线程栈的本地变量，静态变量，本地方法栈的变量等等，说白了就是找到和根节点有联系的对象就是有用的对象，其余都认为是垃圾对象来回收。
 
-![img](https://img-blog.csdnimg.cn/20191126145400951.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126145400951.png)
 
 经历了第一次<font color=#EE82EE>minor gc</font>后，没有被清理的对象就会被移到<font color=#EEA2AD>From区</font>，如上图。
 
-![img](https://img-blog.csdnimg.cn/20191126145647900.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126145647900.png)
 
 上面在说对象组成的时候有写到，在对象头的Mark Word中有存储<font color=#EEA2AD>GC分代年龄</font>，一个对象每经历一次gc，那么它的gc分代年龄就会<font color=red>+1</font>，如上图。
 
-![img](https://img-blog.csdnimg.cn/20191126151319582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126151319582.png)
 
 那么如果第二次新的对象又把Eden区放满了，那么又会执行<font color=#EE82EE>minor gc</font>，但是这次会连着From区一起gc，然后将<font color=#EE82EE>Eden区</font>和<font color=#EEA2AD>From区</font>存活的对象都移到<font color=#FF7256>To区域</font>，对象头中分代年龄都<font color=red>+1</font>，如上图。
 
-![img](https://img-blog.csdnimg.cn/20191126151616936.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126151616936.png)
 
 那么当第三次Eden区又满的时候，<font color=#EE82EE>minor gc</font>就是回收<font color=#EE82EE>Eden区</font>和<font color=#FF7256>To区</font>域了，<font color=#EE82EE>Eden区</font>和<font color=#FF7256>To区</font>域还活着的对象就会都移到From区，如上图。说白了就是<font color=#90EE90>Survivor区</font>中总有一块区域是空着的，存活的对象存放是在<font color=#EEA2AD>From区</font>和<font color=#FF7256>To区</font>轮流存放，也就是互相复制拷贝，这也就是垃圾回收算法中的<font color=red>复制-回收算法</font>。
 
@@ -543,17 +543,17 @@ public class HeapTest {
 
 运行代码打开之后我们可以看到这样的界面：
 
-![img](https://img-blog.csdnimg.cn/2019112616032778.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/2019112616032778.png)
 
 我们在左边的应用程序中可以看到我们运行的这个代码，右边是它的一些jvm，内存信息，我们这里不关注，我们需要用到的是最后一个Visual GC面板，这是一个插件，如果你的打开没有这一栏的话，可以再工具栏的插件中进行下载安装。
 
  打开visual GC，我们先看一下界面大概的布局，
 
-![img](https://img-blog.csdnimg.cn/2019112616134712.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/2019112616134712.png)
 
 其中<font color=#87CEFF>老年代(Olc)</font>，<font color=#EE82EE>伊甸园区(Eden)</font>，<font color=#EEA2AD>S0(From)</font>，<font color=#FF7256>S1(To)</font>几个区域的内存和动态分配图都是清晰可见，以一对应的。
 
-![img](https://img-blog.csdnimg.cn/20191126164339736.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126164339736.png)
 
 我们选择中间一张图给大家对应一下上面所讲的内容：
 
@@ -567,17 +567,17 @@ public class HeapTest {
 >
 > 5：第四步存活的对象移至<font color=#FF7256>To(Survivor 1)</font>区
 
-![img](https://img-blog.csdnimg.cn/20191126171445401.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126171445401.png)
 
 这里可以注意到<font color=#EEA2AD>From</font>和<font color=#FF7256>To区域</font>和我们上面所说移至，总有一个是空的。 
 
-![img](https://img-blog.csdnimg.cn/20191126164912890.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191126164912890.png)
 
 大家还可以注意到老年代这里，都是一段一段的直线，中间是突然的增加，这就是在<font color=#EE82EE>minor gc</font>中一批一批符合规则的对象被批量移入<font color=#87CEFF>老年代</font>。
 
  那当我们老年代满了会发生什么呢？当然是我们上面说过的<font color=red>Full GC</font>，但是你仔细看我们写的这个程序，我们所有new出来的HeapTest对象都是存放在heapLists中的，那就会被这个局部变量所引用，那么<font color=red>Full GC</font>就不会有什么垃圾对象可以回收，可是内存又满了，那怎么办？
 
-![img](https://img-blog.csdnimg.cn/2019112617183192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9wb3RhdG8uYmxvZy5jc2RuLm5ldA==,size_16,color_FFFFFF,t_70)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/2019112617183192.png)
 
 没错，就是我们就算没见过也总听过的<font color=#87CEFF>OOM</font>。
 

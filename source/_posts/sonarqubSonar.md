@@ -58,7 +58,7 @@ grant all on sonar.* to 'sonar'@'192.168.6.226' identified by 'sonar';
 flush privileges;
 ```
 
-![1564051508551](/images/storage/sonarqube_1.png)
+![1564051508551](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_1.png)
 
 
 
@@ -96,9 +96,9 @@ sh /u02/ycc/sonar.../bin/linux.../sonar.sh start
 
 如果使用root的话会出现如下错误：
 
-![1564098693803](/images/storage/sonarqube_2.png)
+![1564098693803](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_2.png)
 
-![1564098711687](/images/storage/sonarqube_3.png)
+![1564098711687](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_3.png)
 
 换个用户，并赋予这个用户sonar目录的权限即可。
 
@@ -108,7 +108,7 @@ sh /u02/ycc/sonar.../bin/linux.../sonar.sh start
 
   将中文插件sonar-l10n-zh-plugin-1.28.jar复制到extensions/plugins
 
-![1564122590906](/images/storage/sonarqube_4.png)
+![1564122590906](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_4.png)
 
 
 
@@ -172,7 +172,7 @@ sh /sonarscannerdir/bin/sonar-scanner -X
 
 
 
-![1564109007362](/images/storage/sonarqube_5.png)
+![1564109007362](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_5.png)
 
 ### 6、maven-sonar-plugin
 
@@ -180,9 +180,9 @@ sh /sonarscannerdir/bin/sonar-scanner -X
 
 对于Maven项目，除了使用SonarQube Scanner进行分析之外，还可以使用maven-sonar-plugin插件进行分析。使用maven-sonar-plugin插件的步骤如下：(setting.xml)
 
-![1564110217662](/images/storage/sonarqube_6.png)
+![1564110217662](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_6.png)
 
-![1564110205988](/images/storage/sonarqube_7.png)
+![1564110205988](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_7.png)
 
 ```xml
 	<profile>
@@ -230,7 +230,7 @@ sh /sonarscannerdir/bin/sonar-scanner -X
 
 如果这里执行报错的话可以使用IDEA的run maven运行：
 
-![1564121819350](/images/storage/sonarqube_8.png)
+![1564121819350](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_8.png)
 
 
 
@@ -255,7 +255,7 @@ sh /sonarscannerdir/bin/sonar-scanner -X
     </profiles>
 ```
 
-![1564121973140](/images/storage/sonarqube_9.png)
+![1564121973140](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_9.png)
 
 ---
 
@@ -267,7 +267,7 @@ sh /sonarscannerdir/bin/sonar-scanner -X
 
 SonarQube 是一个开源的代码分析平台, 用来持续分析和评测项目源代码的质量。 通过SonarQube我们可以检测出项目中重复代码， 潜在bug， 代码规范，安全性漏洞等问题， 并通过SonarQube web UI展示出来。
 
-![1564124669244](/images/storage/sonarqube_10.png)
+![1564124669244](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_10.png)
 
 
 
@@ -290,12 +290,12 @@ Maven、Gradle等内置扫描器
 
 显示用户所有的项目概况，各项目质量评级，并提供条件筛选 
 
-![1564125155644](/images/storage/sonarqube_11.png)
+![1564125155644](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_11.png)
 
 ### 3.SonarQube web UI –项目页面 
 通过在主页面选择单个项目，进入项目详情，该页面提供了当前项目最近一次扫描的结果评级，历史累计和新增问题数量，代码行数等信息 。
 
-![1564125184892](/images/storage/sonarqube_12.png)
+![1564125184892](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_12.png)
 
 
 
@@ -304,19 +304,19 @@ Maven、Gradle等内置扫描器
 提供当前用户名下所有问题的列表，并提供条件筛选，包括问题类型，严重程度等 
 在当个项目中，问题页面显示单项目信息 。
 
-![1564125329743](/images/storage/sonarqube_13.png)
+![1564125329743](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_13.png)
 
 
 
 选中单个问题，查看问题代码详情，sonarqube给出问题描述和修改意见 。
 
-![1564125632530](/images/storage/sonarqube_14.png)
+![1564125632530](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_14.png)
 
 ### 5.SonarQube web UI –评估页面 
 
 给出当前项目的评估概况信息，大小，可靠性，重复率，覆盖率等 。
 
-![1564125742365](/images/storage/sonarqube_15.png)
+![1564125742365](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_15.png)
 
 
 
@@ -326,7 +326,7 @@ Maven、Gradle等内置扫描器
 
 以.java文件为依据，给出各个.java文件统计信息 。
 
-![1564126037590](/images/storage/sonarqube_16.png)
+![1564126037590](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_16.png)
 
 
 
@@ -334,7 +334,7 @@ Maven、Gradle等内置扫描器
 
 页面展示了每次代码扫描的基本信息和代码情况的折线图，折线图可以根据需要调整显示bugs数量，代码行数，覆盖率等信息 。
 
-![1564126123324](/images/storage/sonarqube_167.png)
+![1564126123324](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_167.png)
 
 ---
 
@@ -354,13 +354,13 @@ Maven、Gradle等内置扫描器
 
 进入系统管理-->系统配置界面。(这里选择测试环境的sonarQube地址)
 
-![1564123349587](/images/storage/sonarqube_18.png)
+![1564123349587](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_18.png)
 
 
 
 进入系统管理-->全局工具配置
 
-![1564123462680](/images/storage/sonarqube_19.png)
+![1564123462680](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_19.png)
 
 
 
@@ -372,21 +372,21 @@ Maven、Gradle等内置扫描器
 
 sonar-scanner)。
 
-![1564124297347](/images/storage/sonarqube_20.png)
+![1564124297347](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_20.png)
 
-![1564123835385](/images/storage/sonarqube_21.png)
+![1564123835385](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_21.png)
 
 
 
 在构建历史中可以看到运行中的构建，点进去查看信息：
 
-![1564124138444](/images/storage/sonarqube_22.png)
+![1564124138444](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_22.png)
 
 
 
 另外一种方式是使用maven命令打包，此时需要配置setting.xml，配置见前文。
 
-![1564128857055](/images/storage/sonarqube_23.png)
+![1564128857055](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_23.png)
 
 
 
@@ -394,5 +394,5 @@ sonar-scanner)。
 
 
 
-![1564124244878](/images/storage/sonarqube_24.png)
+![1564124244878](https://gitee.com/MysticalYu/pic/raw/master/hexo/sonarqube_24.png)
 

@@ -78,7 +78,7 @@ private volatile int state;
 
 
 
-![offset_1](/images/storage/offset_1.jpg)
+![offset_1](https://gitee.com/MysticalYu/pic/raw/master/hexo/offset_1.jpg)
 
 
  此文章值得认真阅读几遍： [java对象在内存中的结构（HotSpot虚拟机）](https://www.cnblogs.com/duanxz/p/4967042.html)
@@ -99,7 +99,7 @@ Java对象在内存中存储的布局可以分为三块区域：对象头（Head
 
   对象的内存布局
 
-  ![offset_2](/images/storage/offset_2.jpg)
+  ![offset_2](https://gitee.com/MysticalYu/pic/raw/master/hexo/offset_2.jpg)
 
   image.png
 
@@ -242,7 +242,7 @@ va=2
 
 
 
-![offset_3](/images/storage/offset_3.jpg)
+![offset_3](https://gitee.com/MysticalYu/pic/raw/master/hexo/offset_3.jpg)
 
 - 1、对象头有几位是锁标志位
    可以参考如下文章，对象头跟锁有很重要的关联，并且文章中提到另外一个概念：**Monitor，预留到以后研究**

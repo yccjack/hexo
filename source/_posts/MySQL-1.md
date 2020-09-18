@@ -20,7 +20,7 @@ cover: https://mysticalyu.gitee.io/pic/img/bada-kim-1.jpg
 
  mysql的逻辑架构分为3层；
 
-![img](/images/storage/838913-fb7f263a0d00afe7.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/838913-fb7f263a0d00afe7.png)
 
 - 第一层：服务层(为客户端服务):为请求做连接处理，授权认证，安全等。
 - 第二层：Mysql核心服务层：主要提供，查询解析、分析、优化、缓存以及内置函数，跨存储引擎功能（存储过程、视图、触发器）。

@@ -42,20 +42,20 @@ http://www.dailymotion.com/video/x2s8uec
 （因为这视频是英文解说且没有字幕，我替大家做一下简单的概括：）
 视频中对Oracle数据库进行压力测试，9600并发线程进行数据库操作，每两次访问数据库的操作之间sleep 550ms，一开始设置的中间件线程池大小为2048：
 
-![20191120_1](/images/storage/20191120_1.png)
+![20191120_1](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191120_1.png)
 
 初始化配置
 
 压测跑起来之后是这个样子的：
 
-![20191120084537](/images/storage/20191120084537.png)
+![20191120084537](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191120084537.png)
 
 2048连接时的性能数据
 每个请求要在连接池队列里等待33ms，获得连接后执行SQL需要77ms
 
 此时数据库的等待事件是这个熊样的：
 
-![20191120084611](/images/storage/20191120084611.png)
+![20191120084611](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191120084611.png)
 
 
 
@@ -63,12 +63,12 @@ http://www.dailymotion.com/video/x2s8uec
 
 接下来，把中间件连接池减到1024（并发什么的都不变），性能数据变成了这样：
 
-![20191120084645](/images/storage/20191120084645.png)
+![20191120084645](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191120084645.png)
 
 获取链接等待时长没怎么变，但是执行SQL的耗时减少了。
 下面这张图，上半部分是wait，下半部分是吞吐量
 
-![20191120084705](/images/storage/20191120084705.png)
+![20191120084705](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191120084705.png)
 
 能看到，中间件连接池从2048减半之后，吐吞量没变，但wait事件减少了一半。
 
@@ -102,7 +102,7 @@ wait事件几乎没了，吞吐量上升。
 
 网络和磁盘类似。通过以太网接口读写数据时也会形成阻塞，10G带宽会比1G带宽的阻塞少一些，1G带宽又会比100M带宽的阻塞少一些。不过网络通常是放在第三位考虑的，有些人会在性能计算中忽略它们。
 
-![20191120084732](/images/storage/20191120084732.png)
+![20191120084732](https://gitee.com/MysticalYu/pic/raw/master/hexo/20191120084732.png)
 
 
 上图是PostgreSQL的benchmark数据，可以看到TPS增长率从50个连接数开始变缓。在上面Oracle的视频中，他们把连接数从2048降到了96，实际上96都太高了，除非服务器有16或32颗核心。

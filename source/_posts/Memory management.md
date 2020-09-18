@@ -124,7 +124,7 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 - 2)分配
 - 3)回收
 
-![img](/images/storage/member1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member1)
 
 ## 动态分区
 
@@ -145,9 +145,9 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 **动态分区就有两张表来进行说明了**。
 
-![img](/images/storage/member2)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member2)
 
-![img](/images/storage/member3)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member3)
 
 动态分区分配内存时从可用表或自由链中寻找空闲区的常用方法
 
@@ -197,9 +197,9 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 图5-10所示为指令或数据的**逻辑地址到物理地址的转换过程**
 
-![img](/images/storage/member4)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member4)
 
-![img](/images/storage/member5)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member5)
 
 ### 优点
 
@@ -253,27 +253,27 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 分页地址中的地址结构如下：
 
-![img](/images/storage/member26)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member26)
 
 对某特定机器，其地址结构是一定的。**若给定一个逻辑地址空间中的地址为A，页面的大小为L，则页号P和页内地址d可按下式求得**：
 
-![img](/images/storage/member6)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member6)
 
 ### 页表
 
 在分页系统中，允许将进程的各个页离散地存储在内存的任一物理块中，**为保证进程仍然能够正确地运行，即能在内存中找到每个页面所对应的物理块，系统又为每个进程建立了一张页面映像表，简称页表**
 
-![img](/images/storage/member7)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member7)
 
 进程在运行期间，需要对程序和数据的地址进行变换，即将用户地址空间中的逻辑地址变换为内存空间中的物理地址，由于它执行的频率非常高，每条指令的地址都需要进行变换，因此需要采用硬件来实现。**页表功能是由一组专门的寄存器来实现的。一个页表项用一个寄存器。**
 
-![img](/images/storage/member8)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member8)
 
 由于页表是存放在内存中的，这使CPU在每存取一个数据时，都要两次访问内存**。第一次是访问内存中的页表，从中找到指定页的物理块号，再将块号与页内偏移量W拼接，以形成物理地址。第二次访问内存时，才是从第一次所得地址中获得所需数据(或向此地址中写入数据)。**因此，采用这种方式将使计算机的处理速度降低近1/2。可见，以此高昂代价来换取存储器空间利用率的提高，是得不偿失的。
 
 因此，我们采用：**具有快表的地址变换机**
 
-![img](/images/storage/member9)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member9)
 
 ## 分段存储管理
 
@@ -293,7 +293,7 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 ![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
 
-![img](/images/storage/member10)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member10)
 
 ### 段表
 
@@ -301,7 +301,7 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 为了实现进程从逻辑地址到物理地址的变换功能，**在系统中设置了段表寄存器，用于存放段表始址和段表长度TL。**在进行地址变换时，系统将逻辑地址中的段号与段表长度TL进行比较。若S>TL，表示段号太大，是访问越界，于是产生越界中断信号。若未越界，则根据段表的始址和该段的段号，计算出该段对应段表项的位置，从中读出该段在内存的起始地址。然后，再检查段内地址d是否超过该段的段长SL。若超过，即d>SL，同样发出越界中断信号。若未越界，则将该段的基址d与段内地址相加，即可得到要访问的内存物理地址。图示出了分段系统的地址变换过程。
 
-![img](/images/storage/member11)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member11)
 
 ## 分页和分段的总结
 
@@ -313,17 +313,17 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 段页式系统的基本原理是分段和分页原理的结合，**即先将用户程序分成若干个段，再把每个段分成若干个页，并为每一个段赋予一个段名**。图(a)示出了一个作业地址空间的结构。该作业有三个段：**主程序段、子程序段和数据段；页面大小为 4 KB**。在段页式系统中，其地址结构由段号、段内页号及页内地址三部分所组成，如图(b)所示。
 
-![img](/images/storage/member12)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member12)
 
 在段页式系统中，**为了实现从逻辑地址到物理地址的变换，系统中需要同时配置段表和页表**。**段表**的内容与分段系统略有不同，它不再是内存始址和段长，**而是页表始址和页表长度**。图示出了利用段表和页表进行从用户地址空间到物理(内存)空间的映射。
 
-![img](/images/storage/member13)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member13)
 
 地址变换过程：
 
 　在段页式系统中，为了便于实现地址变换，须配置一个段表寄存器，其中存放段表始址和段长TL。进行地址变换时，首先利用段号S，将它与段长TL进行比较。若S < TL，表示未越界，于是利用段表始址和段号来求出该段所对应的段表项在段表中的位置，从中得到该段的页表始址，并利用逻辑地址中的段内页号P来获得对应页的页表项位置，从中读出该页所在的物理块号b，再利用块号b和页内地址来构成物理地址。图示出了段页式系统中的地址变换机构。
 
-![img](/images/storage/member15)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member15)
 
 # 虚拟存储器
 
@@ -354,11 +354,11 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 在请求分页系统中需要的主要数据结构是**请求页表，其基本作用仍然是将用户地址空间中的逻辑地址映射为内存空间中的物理地址**。为了满足页面换进换出的需要，在请求页表中又增加了四个字段。这样，在请求分页系统中的每个页表应含以下诸项
 
-![img](/images/storage/member16)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member16)
 
 一个显而易见的事实是，随着为每个进程所分配的物理块的减少，将使进程在执行中的缺页率上升，从而会降低进程的执行速度。**最小物理块数是指能保证进程正常运行所需的最小物理块数，当系统为进程分配的物理块数少于此值时，进程将无法运行。**
 
-![img](/images/storage/member17)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member17)
 
 考虑优先权的分配算法。在实际应用中，为了照顾到重要的、紧迫的作业能尽快地完成，应为它分配较多的内存空间。**通常采取的方法是把内存中可供分配的所有物理块分成两部分：一部分按比例地分配给各进程；另一部分则根据各进程的优先权进行分配，为高优先进程适当地增加其相应份额。**在有的系统中，如重要的实时控制系统，则可能是完全按优先权为各进程分配其物理块的。
 
@@ -382,7 +382,7 @@ cover: https://mysticalyu.gitee.io/pic/img/a-i-20.jpg
 
 ### 缺页率
 
-![img](/images/storage/member18)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member18)
 
 **事实上，在缺页中断处理时，当由于空间不足，需要置换部分页面到外存时，选择被置换页面还需要考虑到置换的代价，如页面是否被修改过。没有修改过的页面可以直接放弃，而修改过的页面则必须进行保存，所以处理这两种情况时的时间也是不同的**。假设被置换的页面被修改的概率是β，其缺页中断处理时间为ta，被置换页面没有被修改的缺页中断时间为tb，那么，缺页中断处理时间的计算公式为   t=β×ta+(1—β)×tb
 
@@ -410,7 +410,7 @@ FIFO置换算法的性能之所以较差，**是因为它所依据的条件是�
 
 可利用一个特殊的栈保存当前使用的各个页面的页面号。每当进程访问某页面时，便将该页面的页面号从栈中移出，将它压入栈顶。因此，**栈顶始终是最新被访问页面的编号，而栈底则是最近最久未使用页面的页面号**。假定现有一进程，它分有五个物理块，所访问的页面的页面号序列为：4，7，0，7，1，0，1，2，1，2，6
 
-![img](/images/storage/member19)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member19)
 
 ## 抖动
 
@@ -420,7 +420,7 @@ FIFO置换算法的性能之所以较差，**是因为它所依据的条件是�
 
 由于虚拟存储器系统**能从逻辑上扩大内存**，这时，只需装入一个进程的部分程序和数据便可开始运行，故人们希望在系统中能运行更多的进程，即增加多道程序度，以提高处理机的利用率。**但处理机的实际利用率却如图中的实线所示。 **
 
-![img](/images/storage/member20)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/member20)
 
 产生“抖动”的原因：
 

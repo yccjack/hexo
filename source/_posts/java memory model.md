@@ -39,7 +39,7 @@ Java 的并发采用的是共享内存模型，Java 线程之间的通信总是�
 
 Java 线程之间的通信由 Java 内存模型（本文简称为 JMM）控制，JMM 决定一个线程对共享变量的写入何时对另一个线程可见。从抽象的角度来看，JMM 定义了线程和主内存之间的抽象关系：线程之间的共享变量存储在主内存（main memory）中，每个线程都有一个私有的本地内存（local memory），本地内存中存储了该线程以读 / 写共享变量的副本。本地内存是 JMM 的一个抽象概念，并不真实存在。它涵盖了<font color= #FF1493    >缓存</font>，<font color=#EE82EE >写缓冲区</font>，<font color= #8A2BE2 >寄存器</font>以及其他的硬件和编译器优化。Java 内存模型的抽象示意图如下：
 
-![img](/images/storage/b098a84eb7598d70913444a991d1759b.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/b098a84eb7598d70913444a991d1759b.png)
 
 从上图来看，线程 A 与线程 B 之间如要通信的话，必须要经历下面 2 个步骤：
 
@@ -48,7 +48,7 @@ Java 线程之间的通信由 Java 内存模型（本文简称为 JMM）控制�
 
 下面通过示意图来说明这两个步骤：
 
-![img](/images/storage/2c452d147bf0d09b14b770d3990740cb.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/2c452d147bf0d09b14b770d3990740cb.png)
 
 如上图所示，本地内存 A 和 B 有主内存中共享变量 x 的副本。假设初始时，这三个内存中的 x 值都为 0。线程 A 在执行时，把更新后的 x 值（假设值为 1）临时存放在自己的本地内存 A 中。当线程 A 和线程 B 需要通信时，线程 A 首先会把自己本地内存中修改后的 x 值刷新到主内存中，此时主内存中的 x 值变为了 1。随后，线程 B 到主内存中去读取线程 A 更新后的 x 值，此时线程 B 的本地内存的 x 值也变为了 1。
 
@@ -64,7 +64,7 @@ Java 线程之间的通信由 Java 内存模型（本文简称为 JMM）控制�
 
 从 java 源代码到最终实际执行的指令序列，会分别经历下面三种重排序：
 
-![img](/images/storage/9026b8f4b6c1fae4270615e0aadc7cdf.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/9026b8f4b6c1fae4270615e0aadc7cdf.png)
 
 上述的 1 属于编译器重排序，2 和 3 属于处理器重排序。这些重排序都可能会导致多线程程序出现内存可见性问题。对于编译器，JMM 的编译器重排序规则会禁止特定类型的编译器重排序（不是所有的编译器重排序都要禁止）。对于处理器重排序，JMM 的处理器重排序规则会要求 java 编译器在生成指令序列时，插入特定类型的内存屏障（memory barriers，intel 称之为 memory fence）指令，通过内存屏障指令来禁止特定类型的处理器重排序（不是所有的处理器重排序都要禁止）。
 
@@ -82,7 +82,7 @@ JMM 属于语言级的内存模型，它确保在不同的编译器和不同的�
 
 假设处理器 A 和处理器 B 按程序的顺序并行执行内存访问，最终却可能得到 x = y = 0 的结果。具体的原因如下图所示：
 
-![img](/images/storage/7004695e6bacd62e916f2f5ece3d7c9d.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/7004695e6bacd62e916f2f5ece3d7c9d.png)
 
 这里处理器 A 和处理器 B 可以同时把共享变量写入自己的写缓冲区（A1，B1），然后从内存中读取另一个共享变量（A2，B2），最后才把自己写缓存区中保存的脏数据刷新到内存中（A3，B3）。当以这种时序执行时，程序就可以得到 x = y = 0 的结果。
 
@@ -135,7 +135,7 @@ StoreLoad Barriers 是一个“全能型”的屏障，它同时具有其他三�
 
 happens-before 与 JMM 的关系如下图所示：
 
-![img](/images/storage/bc22eaae1a77f9e1a6c09f4b6a833163.png)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/bc22eaae1a77f9e1a6c09f4b6a833163.png)
 
 如上图所示，一个 happens-before 规则通常对应于多个编译器重排序规则和处理器重排序规则。对于 java 程序员来说，happens-before 规则简单易懂，它避免程序员为了理解 JMM 提供的内存可见性保证而去学习复杂的重排序规则以及这些规则的具体实现。
 
