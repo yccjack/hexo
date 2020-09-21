@@ -93,7 +93,7 @@ avatar:
   effect: false
 
 # the banner image of home page
-index_img: https://mysticalyu.gitee.io/pic/img/yueyang.jpg
+index_img: https://mysticalyu.gitee.io/pic/img/v2-4a5c6f931f59e40dbdba8104d451f15e_r.jpg
 
 # if the banner of page not setting, it will show the top_img
 default_top_img: https://mysticalyu.gitee.io/pic/img/aniraiden-wu-final003-00000.jpg
