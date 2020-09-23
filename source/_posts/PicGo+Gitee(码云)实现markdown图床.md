@@ -24,7 +24,7 @@ PicGo + Gitee(码云)实现markdown图床
 
 效果图：
 
-![gallery](https://gitee.com/MysticalYu/pic/raw/master/hexo/gallery.gif)
+![](https://img-blog.csdnimg.cn/20200922214917671.gif#pic_center)
 
 # PicGo + Gitee(码云)实现markdown图床
 

@@ -11,7 +11,7 @@ menu:
  归档: /archives/ || fas fa-archive
  标签: /tags/ || fas fa-tags
  分类: /categories/ || fa fa-camera-retro
- 画廊: /gallery/ ||
+ 画廊: /gallery/ || fas fa-images
  友链: /link/ || fas fa-link
  关于我: /about/ || fas fa-heart
 
@@ -603,8 +603,20 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
+    - 中秋谁与共孤光。把盏凄然北望。
     - 山有木兮木有枝，心悦君兮君不知。
     - 人生若只如初见，何事秋风悲画扇。
+    - 曾经沧海难为水，除却巫山不是云。
+    - 十年生死两茫茫，不思量，自难忘。
+    - 玲珑骰子安红豆，入骨相思知不知。
+    - 只愿君心似我心，定不负相思意。
+    - 平生不会相思，才会相思，便害相思。
+    - 花自飘零水自流。一种相思，两处闲愁。
+    - 思悠悠，恨悠悠，恨到归时方始休。
+    - 衣带渐宽终不悔，为伊消得人憔悴。
+    - 系我一生心，负你千行泪。
+    - 此情无计可消除，才下眉头，却上心头。
+    
 # Loading Animation (加載動畫)
 preloader: true
 

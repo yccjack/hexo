@@ -10,7 +10,7 @@ cover: https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg
 
 
 
-![](https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg)
+![](https://mysticalyu.gitee.io/pic/img/hj-ahn-2-1.jpg)
 
    从输入一个地址开始，它可以是这样的 <font color=#2cede4> www.baidu.com</font>, 也可以是这样的 **https://admin:admin@www.gschaos.club:80/dir/file1.html**, 咋一看好像都能看懂,而且还知道这么输入会得到什么,更言之还能断点调试一下; 可是输入一个网址到底发生了什么？
 
@@ -29,7 +29,7 @@ cover: https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg
 
 我们先来看下URL,URL有很多种,不止我们常用到的http://,还有很多比如<font color=#2cede4>"file:" (读取本地文件) , "ftp:"(文件传输协议) , "mailto:"(邮件服务,需要配置正确的电子邮箱)</font>等.
 
-![url的各种格式](https://gitee.com/MysticalYu/pic/raw/master/hexo/url.png)
+![url的各种格式](https://mysticalyu.gitee.io/pic/hexo/url.png)
 
 它们拥有同样的格式,即都需要定义一个访问方法(协议http,ftp等).
 
@@ -43,7 +43,7 @@ cover: https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg
 
 解析方式如下:
 
-![URL解析](https://gitee.com/MysticalYu/pic/raw/master/hexo/urlany.png)
+![URL解析](https://mysticalyu.gitee.io/pic/hexo/urlany.png)
 
 有时候进入主页的时候文件名经常不写比如**http://www.lab.com/dir/**,那么解析的时候就会去寻找目录下面的default.html或者index.html具体访问什么要看服务器如何配置.当不写最后一个**/**时,是会先寻找文件夹,再寻找文件名的规则来进行的.
 
@@ -57,7 +57,7 @@ HTTP协议定义了客户端和服务器之间交互的消息内容和步骤,请
 >
 > **做什么**:  也称为方法.表示需要Web服务器做什么,典型的例子包括读取URI表示的数据/将客户端输入的数据发送给URI表示的程序等.
 
-![doWhat](https://gitee.com/MysticalYu/pic/raw/master/hexo/dowhat.png)
+![doWhat](https://mysticalyu.gitee.io/pic/hexo/dowhat.png)
 
 看到这张图是不是就对之前所解释的**做什么**有所了解了呢!
 
@@ -81,7 +81,7 @@ HTTP协议定义了客户端和服务器之间交互的消息内容和步骤,请
 
 IP地址同样是这样的道理。
 
-![intnet](https://gitee.com/MysticalYu/pic/raw/master/hexo/intnet.png)
+![intnet](https://mysticalyu.gitee.io/pic/hexo/intnet.png)
 
 
 
@@ -91,19 +91,19 @@ IP地址同样是这样的道理。
 
 你要说怎么理解，那看下面这张图吧(自己画的可能不准确！)。
 
-![naphthalene](https://gitee.com/MysticalYu/pic/raw/master/hexo/naphthalene.png)
+![naphthalene](https://mysticalyu.gitee.io/pic/hexo/naphthalene.png)
 
 在网络中所有的设备都会被分配一个地址。就好像是**XX号XX室**。其中**号**对应的号码是分配给整个子网的，而**室**对应的号码是分配给子网中的计算机的，这就是网络中的地址。**号**对应的号码称为网络号，**室**对应的号码称为主机号，这个地址的整体称为IP地址。发送者发送的消息首先经过子网中的集线器，转发到距离最近的路由器上。接下来，路由器会根据消息的目的地判断下一个路由去的位置，然后将消息发送到下一个路由器，即消息再次经过子网内的集线器被转发到下一个路由器。前面的过程不断重复，最终消息就被传到了目的地。这个过程就好像你准备好信件由邮局寄出，邮局寄出后会送往下一站，再由下一站判断你的目的地，再往下送一样；
 
 那么这个地址到底是怎么组成的呢？
 
-![IP](https://gitee.com/MysticalYu/pic/raw/master/hexo/ip.png)
+![IP](https://mysticalyu.gitee.io/pic/hexo/ip.png)
 
 如上图，实际的IP地址是一串32比特的数字，按照1个字节为一组分成4组，分别用十进制表示然后再用圆点隔开。在IP地址的规则中，网络号和主机号连接起来总共是32比特，但这两部分的具体结构是不固定的。在组建网络时，用户可以自行决定他们之间的分配关系，因此，这里还需要另外的附加信息来表示IP地址的内部结构。
 
 这个附加信息就是子网掩码。子网掩码的格式如下图，是一串与IP地址长度相同的32比特数字，左边一半全是1，代表网络号，右边一半全是0，代表主机号。
 
-![ipyanma](https://gitee.com/MysticalYu/pic/raw/master/hexo/ipyanma.png)
+![ipyanma](https://mysticalyu.gitee.io/pic/hexo/ipyanma.png)
 
 
 
@@ -117,11 +117,11 @@ IP地址同样是这样的道理。
 
 这就要涉及到DNS域名服务器，浏览器委托操作系统先去DNS域名服务器查询域名对应的IP地址，服务器返回需要IP，然后我们就可以用这个IP发送消息了。
 
-![mengbi2](https://gitee.com/MysticalYu/pic/raw/master/hexo/mengbi2.jpg)
+![mengbi2](https://mysticalyu.gitee.io/pic/hexo/mengbi2.jpg)
 
 等等！我怎么访问DNS域名服务器的？我..我怎么知道它的IP的？？
 
-![mangqu](https://gitee.com/MysticalYu/pic/raw/master/hexo/mangqu.jpeg)
+![mangqu](https://mysticalyu.gitee.io/pic/hexo/mangqu.jpeg)
 
 参考[DNS 原理入门](http://www.ruanyifeng.com/blog/2016/06/dns.html)以及如果你听英文可以听得懂的话 [AWS的‘什麼是 DNS’？](https://aws.amazon.com/tw/route53/what-is-dns/)；
 
@@ -157,11 +157,11 @@ host.sld.tld.root
 
 知道了对方的IP地址，要怎么才算连接呢？以编程者的思想连接如下图所示。
 
-![allConnect](https://gitee.com/MysticalYu/pic/raw/master/hexo/allConnect.png)
+![allConnect](https://mysticalyu.gitee.io/pic/hexo/allConnect.png)
 
 我们这里不需要知道编程怎么实现，因为不管是哪种编程它们都是在委托操作系统在发送信息，所以基本流程如下图。
 
-![simpleConnect](https://gitee.com/MysticalYu/pic/raw/master/hexo/simpleConnect.png)
+![simpleConnect](https://mysticalyu.gitee.io/pic/hexo/simpleConnect.png)
 
 
 
@@ -175,7 +175,7 @@ host.sld.tld.root
 
 
 
-![netstat](https://gitee.com/MysticalYu/pic/raw/master/hexo/netstat.png)
+![netstat](https://mysticalyu.gitee.io/pic/hexo/netstat.png)
 
 图中每一行相当于一个套接字，当创建套接字时，就会增加一行控制信息，赋予“即将开始通信”的状态，并进行通信的准备工作，如分配用于临时存放手法数据的缓冲区空间。
 
@@ -191,7 +191,7 @@ host.sld.tld.root
 
 
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-ad2bee0fd2abff4bf5807ca93d93cbd6_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-ad2bee0fd2abff4bf5807ca93d93cbd6_hd.jpg)
 
 
 
@@ -217,7 +217,7 @@ TCP/IP 模型是由 OSI 模型演化而来，TCP/IP 模型将 OSI 模型由七�
 
 
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-72754ddc9c8133906ade003ad4a346d5_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-72754ddc9c8133906ade003ad4a346d5_hd.jpg)
 
 
 
@@ -269,13 +269,13 @@ TCP/IP协议被称为传输控制协议/互联网协议，又称网络通讯协�
 
 IP头部是由20个字节组成的，具体项所占的位数如下图：
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-7060962aca6abdc95435330415f968fa_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-7060962aca6abdc95435330415f968fa_hd.jpg)
 
 
 
 具体的数据我们用Wireshark来表抓取一下，如图（蓝色部分为IP数据包）：
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-489d57b43d9b4c6d2535eeeb60cc7f3f_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-489d57b43d9b4c6d2535eeeb60cc7f3f_hd.jpg)
 
 
 
@@ -320,7 +320,7 @@ TCP主要是将数据进行分段打包传输，对每个数据包编号控制�
 
 有点和IP头类似，我们先来张图看下：
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-8caac8f1477e7e0848743f8a9c1d91ba_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-8caac8f1477e7e0848743f8a9c1d91ba_hd.jpg)
 
 
 
@@ -379,7 +379,7 @@ curl -d "user":"lucy" 172.16.17.94:8080
 
 
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-ae1b0c298e03963eab3fc23847a6ef20_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-ae1b0c298e03963eab3fc23847a6ef20_hd.jpg)
 
 上图中A为三次握手，B为数据传输，C为四次挥手。下面我们详细介绍一下这三个部分。
 
@@ -387,7 +387,7 @@ curl -d "user":"lucy" 172.16.17.94:8080
 
 
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-4d7cd156319c914e115b19ee15e70063_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-4d7cd156319c914e115b19ee15e70063_hd.jpg)
 
 
 我们把这个过程分为三部分，第一部分为三次握手建立连接，第二部分为数据传输，第三次为四次挥手断开连接。
@@ -396,7 +396,7 @@ curl -d "user":"lucy" 172.16.17.94:8080
 
 我们分析一下三次握手的过程（包括ack 和 seq的值变化）。
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-b93fef4ca387c4aa50071dad72fc2085_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-b93fef4ca387c4aa50071dad72fc2085_hd.jpg)
 
 
 
@@ -410,7 +410,7 @@ curl -d "user":"lucy" 172.16.17.94:8080
 
 > 数据传输
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-325456c5c7054ee6b29795a684cbbffb_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-325456c5c7054ee6b29795a684cbbffb_hd.jpg)
 
 
 
@@ -426,7 +426,7 @@ curl -d "user":"lucy" 172.16.17.94:8080
 
 当客户端和服务器通过三次握手建立了TCP连接以后，当数据传送完毕，就要断开TCP连接了，就有了神秘的“四次挥手”。
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-6704e393bd622132d3dac3773412ec26_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-6704e393bd622132d3dac3773412ec26_hd.jpg)
 
 
 
@@ -448,7 +448,7 @@ curl -d "user":"lucy" 172.16.17.94:8080
 TCP/IP模型我们基本介绍完了，那层与层之间是怎样合作和分工的呢，我们用两张图介绍一下：
 发送方的数据是从上往下传输的，即从应用层向物理层传输。接收方的数据是从下往上传输的，即从物理层向应用层传输。如下两张图。
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-fddf614d20e94c08a02861297fb95a99_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-fddf614d20e94c08a02861297fb95a99_hd.jpg)
 
 
 
@@ -464,7 +464,7 @@ TCP/IP模型我们基本介绍完了，那层与层之间是怎样合作和分�
 
 
 
-![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/v2-1ede5aa9c734a98c0d9c259cd92308fe_hd.jpg)
+![img](https://mysticalyu.gitee.io/pic/hexo/v2-1ede5aa9c734a98c0d9c259cd92308fe_hd.jpg)
 
 接收方是从低层到高层解封装
 
@@ -476,7 +476,7 @@ TCP/IP模型我们基本介绍完了，那层与层之间是怎样合作和分�
 
 **我严重怀疑你在拖文章长度**
 
- ![尴尬表情包](https://gitee.com/MysticalYu/pic/raw/master/hexo/ganga.jpeg) 
+ ![尴尬表情包](https://mysticalyu.gitee.io/pic/hexo/ganga.jpeg) 
 
 
 

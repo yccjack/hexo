@@ -189,7 +189,7 @@ Simple JVM  Tuning simulation
 >
 > > 在编译程序代码的时候，栈帧中需要多大的局部变量表，多深的操作数栈都已经完全确定了。  因此一个栈帧需要分配多少内存，不会受到程序运行期变量数据的影响，而仅仅取决于具体的虚拟机实现。
 
-![20180121103152636](https://gitee.com/MysticalYu/pic/raw/master/hexo/20180121103152636.png)
+![image-20200923083340427](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200923083340427.png)
 
 ### 局部变量表
 
@@ -441,7 +441,7 @@ son choose qq
 
    由于动态分派是非常频繁的动作，而且动态分派的方法版本选择过程需要运行时在类的方法元数据中搜索合适的目标方法，因此在虚拟机的实际实现中基于性能的考虑，大部分实现都不会真正的进行如此频繁的搜索。面对这种情况，最常用的“稳定优化”手段就是**为类在方法区中建立一个虚方法表**（vtable，熟悉C++的肯定很熟悉。于此对应的，在invokeinterface执行时也会用到接口方法表---itable），**使用虚方法表索引来代替元数据查找以提高性能。**具体如下图所示：
 
-​    ![img](/images/storage/592743-20160322113550886-2079596000.png)
+​    ![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/592743-20160322113550886-2079596000.png)
 
    虚方法表中存放着各个方法的实际入口地址，如果某个方法在子类中没有被重写，那子类的虚方法表里面的地址入口和父类相同方法的入口地址是一致的，都指向父类的实现入口。如果子类重写了这个方法，子类方法表中的地址将会替换为指向子类实现版本的入口地址。如上图所示，Son重写了来自Father的全部方法，因此Son的方法表没有指向Father类型数据的箭头。但是Son和Father都没有重写来自Object的方法，所以他们的方法表中所有从Object继承来的方法都指向了Object的数据类型。
 
@@ -493,23 +493,23 @@ public class CalcTest {
 
 从Java语言的角度来看，这段代码没有任何解释的必要，可以直接使用javap命令看看他的字节码指令，如下所示。
 
-![img](/images/storage/jvmsimple1.jpg)
+![image-20200923083527958](https://gitee.com/MysticalYu/pic/raw/master/hexo/image-20200923083527958.png)
 
 javap提示这段代码需要深度为2的操作数栈和4个Slot的局部变量空间，根据这些信息画了下面共7张图，用他们来描述上面执行过程中的代码、操作数栈和局部变量表的变化情况。
 
-![img](/images/storage/jvmsimple2.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple2.jpg)
 
-![img](/images/storage/jvmsimple3.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple3.jpg)
 
-![img](/images/storage/jvmsimple4.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple4.jpg)
 
-![img](/images/storage/jvmsimple5.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple5.jpg)
 
-![img](/images/storage/jvmsimple6.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple6.jpg)
 
-![img](/images/storage/jvmsimple7.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple7.jpg)
 
-![img](/images/storage/jvmsimple8.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/jvmsimple8.jpg)
 
 上面的执行过程仅仅是一种概念模型，虚拟机最终会对执行过程做一些优化来提高性能，实际运行过程不一定完全符合概念模型的描述......更准确地说，实际情况会和上面的字节码进行优化，例如，在HotSpot虚拟机中，有很多以“fast_”开头的非标准字节码指令用于合并、替换输入的字节码以提升解释执行性能，而即时编译器的优化手段更加花样繁多。
 不过，我们从这段程序的执行中也可以看出栈结构指令集的一般运行过程，整个运算过程的中间变量都以操作数栈的出栈、入栈为信息交换途径，符合我们在前面分析的特点。
