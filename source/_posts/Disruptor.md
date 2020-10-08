@@ -11,8 +11,6 @@ sidebar: [grid, toc, tags] # 放置任何你想要显示的侧边栏部件
 
 
 
-![](https://mysticalyu.gitee.io/pic/img/20200407235645-www-ycfcg-com-4.jpg)
-
 应该知道的高性能无锁队列Disruptor;
 
 
@@ -113,7 +111,7 @@ public class Myclass {
 
 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_1.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_1.jpg)
 
 
 
@@ -138,7 +136,7 @@ Martin和Mike的 QConpresentation演讲中给出了一些每个缓存时间：
 
 在cpu的多级缓存中，并不是以独立的项来保存的，而是类似一种pageCahe的一种策略，以缓存行来保存，而缓存行的大小通常是64字节，在Java中Long是8个字节，所以可以存储8个Long,举个例子，你访问一个long的变量的时候，他会把帮助再加载7个，我们上面说为什么选择数组不选择链表，也就是这个原因，在数组中可以依靠缓冲行得到很快的访问。 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_2.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_2.jpg)
 
 
 
@@ -155,7 +153,7 @@ class ArrayQueue{
 
 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_3.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_3.jpg)
 
 
 
@@ -187,7 +185,7 @@ class RhsPadding extends Value
 
 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_4.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_4.jpg)
 
 
 
@@ -201,7 +199,7 @@ class RhsPadding extends Value
 
 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_5.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_5.jpg)
 
 
 
@@ -307,7 +305,7 @@ EventTranslator:实现这个接口可以将我们的其他数据结构转换为�
 
 - 已经被所有消费者读过，可以在写的位置。 如果没有读取到会一直尝试去读，disruptor做的很巧妙，并没有一直占据CPU，而是通过LockSuport.park()，进行了一下将线程阻塞挂起操作，为的是不让CPU一直进行这种空循环，不然其他线程都抢不到CPU时间片。 
 
-  ![img](https://gitee.com/MysticalYu/pic/hexo/dis_ex.jpg)
+  ![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_ex.jpg)
 
    获取位置之后会进行cas进行抢占，如果是单线程就不需要。
 
@@ -318,7 +316,7 @@ EventTranslator:实现这个接口可以将我们的其他数据结构转换为�
 
 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_6.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_6.jpg)
 
 
 
@@ -336,13 +334,13 @@ EventTranslator:实现这个接口可以将我们的其他数据结构转换为�
 
 - 如果小于证明还没有写到这个位置，在阻塞策略中会进行阻塞，其会在生产者提交阶段进行唤醒。 3.对这个位置进行可读校验，因为你申请的位置可能是连续的，比如生产者目前在7，接下来申请读，如果消费者已经把8和10这个序列号的位置写进去了，但是9这个位置还没来得及写入，由于第一步会返回10，但是9其实是不能读的，所以得把位置向下收缩到8。 
 
-  ![img](https://gitee.com/MysticalYu/pic/hexo/dis_7.jpg)
+  ![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_7.jpg)
 
    4.如果收缩完了之后比当前next要小，则继续循环申请。 5.交给handler.onEvent()处理
 
 一样的我们举个例子，我们要申请next=8这个位置。 1.首先在共享队列抢占进度8，在独立队列写入进度7 2.获取8的可读的最大位置，这里根据不同的策略进行，我们选择阻塞，由于生产者生产了8，9，10，所以返回的是10，这样和后续就不需要再次和avaliableBuffer进行对比了。 3.最后交给handler进行处理。 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_8)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_8)
 
 
 
@@ -352,6 +350,6 @@ EventTranslator:实现这个接口可以将我们的其他数据结构转换为�
 
 
 
-![img](https://gitee.com/MysticalYu/pic/hexo/dis_9.jpg)
+![img](https://gitee.com/MysticalYu/pic/raw/master/hexo/dis_9.jpg)
 
 

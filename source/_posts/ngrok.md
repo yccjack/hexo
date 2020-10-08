@@ -7,8 +7,6 @@ cover: https://mysticalyu.gitee.io/pic/img/bora-kim-1-thumbnail2.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/bora-kim-1-thumbnail2.jpg)
-
 ngrok是一个反向代理，它能够让你本地的web服务或tcp服务通过公共的端口和外部建立一个安全的通道，使得外网可以访问本地的计算机服务。ngrok1.x开源，ngrok2.x不开源
 
 

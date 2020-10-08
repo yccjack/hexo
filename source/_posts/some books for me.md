@@ -4,11 +4,11 @@ title: 操作系统+网络
 categories: [架构]
 mathjax: true
 date: 2020-03-04
-cover: https://mysticalyu.gitee.io/pic/img/daehwan-jang-pose4.jpg
+cover: https://mysticalyu.gitee.io/pic/img_min/a-i-20.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/daehwan-jang-pose4.jpg)
+
 
 最近在读一本<<软件架构设计:大型网站技术架构与业务融合之道>>,它就像是把你平时一点点积累的知识有条理且有深度的整合。一步一步的将读者断断续续的知识接起来。以下文章是记录书本中的一些知识并加以拓展。
 

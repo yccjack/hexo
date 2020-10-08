@@ -6,7 +6,7 @@ date: 2020-08-22
 cover: https://mysticalyu.gitee.io/pic/img/gyul-bae-templar-20-g.jpg
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/gyul-bae-templar-20-g.jpg)
+Ubuntu 16.04下Shadowsocks服务器端安装及优化
 
 
 

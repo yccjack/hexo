@@ -13,8 +13,11 @@
   },
   "dependencies": {
     "generator": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "hexo": "^5.1.1",
     "hexo-deployer-git": "^2.1.0",
+    "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^1.0.0",
@@ -32,5 +35,10 @@
     "hexo-server": "^1.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "sitemap": "^6.3.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-imagemin": "^7.1.0"
   }
 }

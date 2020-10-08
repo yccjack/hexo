@@ -9,7 +9,7 @@ cover: https://mysticalyu.gitee.io/pic/img/20200409141450-lee-gh-2.jpg
 description: 并发编程之Atomic&Unsafe魔法类详解--原子（atom）本意是“不能被进一步分割的最小粒子”，而原子操作（atomic operation）意为”不可被中断的一个或一系列操作”。在多处理器上实现原子操作就变得有点复杂。本文让我们一起来聊一聊在Inter处理器和Java里是如何实现原子操作的。
 ---
 
-<img src="https://mysticalyu.gitee.io/pic/img/20200409141450-lee-gh-2.jpg"  style="zoom:50%" />
+
 
 并发编程之Atomic&Unsafe魔法类详解--原子（atom）本意是“不能被进一步分割的最小粒子”，而原子操作（atomic operation）意为”不可被中断的一个或一系列操作”。在多处理器上实现原子操作就变得有点复杂。本文让我们一起来聊一聊在Inter处理器和Java里是如何实现原子操作的。
 

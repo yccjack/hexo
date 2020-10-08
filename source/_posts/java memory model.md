@@ -9,7 +9,7 @@ cover: https://mysticalyu.gitee.io/pic/img/20200409221112-hyejin-jo-3.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/20200409221112-hyejin-jo-3.jpg)
+
 
 在并发编程中，我们需要处理两个关键问题：线程之间如何通信及线程之间如何同步（这里的线程是指并发执行的活动实体）。通信是指线程之间以何种机制来交换信息。在命令式编程中，线程之间的通信机制有两种：共享内存和消息传递。
 

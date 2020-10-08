@@ -7,8 +7,6 @@ cover: https://mysticalyu.gitee.io/pic/img/20200407235917-www-ycfcg-com-3.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/20200407235917-www-ycfcg-com-3.jpg)
-
 java 8 通过发布新的Date-Time API (JSR 310)来进一步加强对日期和时间的处理。
 
 

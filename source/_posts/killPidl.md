@@ -6,7 +6,7 @@ date: 2020-09-07
 cover: https://mysticalyu.gitee.io/pic/img/wayne-wan-(4).jpg
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/wayne-wan-(4).jpg)
+linux 查看某进程 并杀死进程 ps grep kill
 
 
 

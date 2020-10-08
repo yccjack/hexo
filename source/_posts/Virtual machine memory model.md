@@ -8,7 +8,7 @@ cover: https://mysticalyu.gitee.io/pic/img/huifeng-huang-pose-cl05.jpg
 description: java虚拟机内存模型
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/huifeng-huang-pose-cl05.jpg)
+java虚拟机内存模型
 
 
 

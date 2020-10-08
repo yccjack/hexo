@@ -7,7 +7,7 @@ date: 2020-01-11
 cover: https://mysticalyu.gitee.io/pic/img/cat-lazy-fengmian.jpg
 
 ---
-![](https://mysticalyu.gitee.io/pic/img/cat-lazy-fengmian.jpg)
+动态代理在代码中的应用
 
 
 

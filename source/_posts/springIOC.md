@@ -8,7 +8,7 @@ cover: https://mysticalyu.gitee.io/pic/img/-dkv01-02.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/-dkv01-02.jpg)
+Spring IOC
 
 
 

@@ -7,8 +7,6 @@ cover: https://mysticalyu.gitee.io/pic/img/20200605013054948.jpg
 description: 
 ---
 
-![img](https://mysticalyu.gitee.io/pic/img/a-i-20.jpg)
-
 在我们自己的购买的服务器环境中，一般是买的1g的内存，但是当服务器里面的东西装的比较多的时候就会导致内存不够用了,这个时候可以通过增加虚拟内存来夸大内存容量。
 
 

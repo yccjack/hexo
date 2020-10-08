@@ -9,8 +9,6 @@ cover: https://mysticalyu.gitee.io/pic/img/20200407235705-www-ycfcg-com-3.jpg
 
 
 
-![](https://mysticalyu.gitee.io/pic/img/20200407235705-www-ycfcg-com-3.jpg)
-
 数据库连接池的配置是开发者们常常搞出坑的地方，在配置数据库连接池时，有几个可以说是和直觉背道而驰的原则需要明确。
 
 

@@ -8,7 +8,7 @@ description: seaweedfs是一个非常优秀的由 golang 开发的分布式存�
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/cg-84.jpg)
+
 
 seaweedfs是一个非常优秀的由 golang 开发的分布式存储开源项目。它是用来存储文件的系统，并且与使用的语言无关，使得文件储存在云端变得非常方便。
 

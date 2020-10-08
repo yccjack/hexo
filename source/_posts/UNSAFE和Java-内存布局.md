@@ -4,10 +4,10 @@ title: 并发编程之Atomic&Unsafe魔法类详解
 categories: [java]
 date: 2019-12-12
 mathjax: true
-cover: https://mysticalyu.gitee.io/pic/img/jeong-hyun-jun-front.jpg
+cover: https://mysticalyu.gitee.io/pic/img_min/lee-gh-2.jpg
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/jeong-hyun-jun-front.jpg)
+并发编程之Atomic&Unsafe魔法类详解
 
 
 

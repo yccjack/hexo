@@ -7,7 +7,7 @@ cover: https://mysticalyu.gitee.io/pic/img/vahid-ahmadi-8a-sx-by-vahid-ahmadi-zb
 	
 ---
 
-<img src="https://mysticalyu.gitee.io/pic/img/vahid-ahmadi-8a-sx-by-vahid-ahmadi-zbrush-work.jpg" style="zoom:67%;" />
+Spring Cloud Gateway 读取、修改请求体（解决request body内容被截断基于2.0.6版本，升级版本后可能不存在此问题）
 
 
 

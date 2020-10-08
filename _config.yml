@@ -106,7 +106,7 @@ baidusitemap:
 #fancybox: true
 #
 lazyload:
-  enable: false 
+  enable: false
   onlypost: false
   loadingImg: # eg ./images/loading.gif 
 symbols_count_time:

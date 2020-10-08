@@ -7,8 +7,6 @@ cover: https://mysticalyu.gitee.io/pic/img/cg-.jpg
 description: 解决jar包冲突的简单办法-- 在使用log4j.properties时，pom中导入的一些jar会产生log4j类的冲突报错，以下是一个简单的pom配置：
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/cg-.jpg)
-
 解决jar包冲突的简单办法-- 在使用log4j.properties时，pom中导入的一些jar会产生log4j类的冲突报错，以下是一个简单的pom配置：
 
 

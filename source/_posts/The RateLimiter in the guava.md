@@ -9,7 +9,7 @@ cover: https://mysticalyu.gitee.io/pic/img/eric-lee-psb.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/eric-lee-psb.jpg)
+<font color= #EE82EE>限流原理解读之guava中的RateLimiter</font>
 
 
 

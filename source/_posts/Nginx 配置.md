@@ -7,7 +7,7 @@ cover: https://mysticalyu.gitee.io/pic/img/yun-sihang-yun-sh-eee.jpg
 	
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/yun-sihang-yun-sh-eee.jpg)
+在了解具体的Nginx配置项之前我们需要对于Nginx配置文件的构成有所概念，一般来说，Nginx配置文件会由如下几个部分构成：
 
  
 

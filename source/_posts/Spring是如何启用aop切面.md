@@ -7,7 +7,7 @@ cover: https://mysticalyu.gitee.io/pic/img/d-long-5k.jpg
 description: Spring是如何启用aop切面（比如声明式事务），而对我们的bean实现代理的呢？
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/d-long-5k.jpg)
+Spring是如何启用aop切面（比如声明式事务），而对我们的bean实现代理的呢？
 
 
 

@@ -8,7 +8,7 @@ cover: https://mysticalyu.gitee.io/pic/img/20200605013054357.jpg
 
 ---
 
-![](https://mysticalyu.gitee.io/pic/img/20200605013054357.jpg)
+
 
 Lib之过？Java反序列化漏洞通用利用分析    转自：https://blog.chaitin.cn/2015-11-11_java_unserialize_rce/
 
