@@ -6,7 +6,7 @@ title: PicGo + Gitee(码云)实现markdown图床
 categories: 图床
 tags: [图床] 
 date: 2020-09-07
-cover: https://mysticalyu.gitee.io/pic/img/euginnx-_wu-09.jpg
+cover: https://gschaos.club/ico/img/euginnx-_wu-09.jpg
 
 ---
 

@@ -3,7 +3,7 @@ title: Spring Cloud Gateway 读取、修改请求体（解决request body内容�
 categories: java
 tags: [java,操作系统,分页管理] 
 date: 2020-09-07
-cover: https://mysticalyu.gitee.io/pic/img/vahid-ahmadi-8a-sx-by-vahid-ahmadi-zbrush-work.jpg
+cover: https://gschaos.club/ico/img/vahid-ahmadi-8a-sx-by-vahid-ahmadi-zbrush-work.jpg
 	
 ---
 

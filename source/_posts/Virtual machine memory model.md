@@ -4,7 +4,7 @@ title: java虚拟机内存模型
 categories: [java]
 date: 2019-12-04
 mathjax: true
-cover: https://mysticalyu.gitee.io/pic/img/huifeng-huang-pose-cl05.jpg
+cover: https://gschaos.club/ico/img/huifeng-huang-pose-cl05.jpg
 description: java虚拟机内存模型
 ---
 

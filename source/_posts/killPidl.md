@@ -3,7 +3,7 @@ title: 杀死进程
 categories: linux
 tags: [linux,shell] 
 date: 2020-09-07
-cover: https://mysticalyu.gitee.io/pic/img/wayne-wan-(4).jpg
+cover: https://gschaos.club/ico/img/wayne-wan-(4).jpg
 ---
 
 linux 查看某进程 并杀死进程 ps grep kill

@@ -4,7 +4,7 @@ title: 限流原理解读之guava中的RateLimiter
 categories:  RateLimiter限流
 tags: [Guava] 
 date: 2019-10-19
-cover: https://mysticalyu.gitee.io/pic/img/eric-lee-psb.jpg
+cover: https://gschaos.club/ico/img/eric-lee-psb.jpg
 
 
 ---

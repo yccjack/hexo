@@ -3,7 +3,7 @@ title: ngrok内网穿透
 categories: 服务器
 tags: [ngrok,java,内网穿透] 
 date: 2020-08-28
-cover: https://mysticalyu.gitee.io/pic/img/bora-kim-1-thumbnail2.jpg
+cover: https://gschaos.club/ico/img/bora-kim-1-thumbnail2.jpg
 
 ---
 

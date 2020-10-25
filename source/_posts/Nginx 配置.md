@@ -3,7 +3,7 @@ title: Nginx 配置
 categories: nginx
 tags: [nginx,操作系统] 
 date: 2020-09-07
-cover: https://mysticalyu.gitee.io/pic/img/yun-sihang-yun-sh-eee.jpg
+cover: https://gschaos.club/ico/img/yun-sihang-yun-sh-eee.jpg
 	
 ---
 

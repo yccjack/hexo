@@ -1,6 +1,6 @@
 ---
 title: jvm垃圾回收算法
-cover: https://mysticalyu.gitee.io/pic/img_min/yueyang.jpg
+cover: https://gschaos.club/ico/img/yueyang.jpg
 categories: jvm
 tags: [jvm,java] 
 date: 2020-09-28

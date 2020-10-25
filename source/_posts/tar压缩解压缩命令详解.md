@@ -3,7 +3,7 @@ title: tar压缩解压缩命令详解
 categories: linux
 tags: [linux,shell] 
 date: 2020-09-07
-cover: https://mysticalyu.gitee.io/pic/img/smile-_z-7.jpg
+cover: https://gschaos.club/ico/img/smile-_z-7.jpg
 ---
 
 tar压缩解压缩命令详解

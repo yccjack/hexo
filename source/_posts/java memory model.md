@@ -4,7 +4,7 @@ title: Java 内存模型
 categories: java
 tags: [内存模型] 
 date: 2019-11-11
-cover: https://mysticalyu.gitee.io/pic/img/20200409221112-hyejin-jo-3.jpg
+cover: https://gschaos.club/ico/img/20200409221112-hyejin-jo-3.jpg
 
 
 ---

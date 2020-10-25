@@ -4,7 +4,7 @@ title: 浏览器
 categories: 网络是怎么连接的
 tags: [计算机网络] 
 date: 2020-01-11
-cover: https://mysticalyu.gitee.io/pic/img/20200407233909-www-ycfcg-com-2(4).jpg
+cover: https://gschaos.club/ico/img/20200407233909-www-ycfcg-com-2(4).jpg
 
 ---
 

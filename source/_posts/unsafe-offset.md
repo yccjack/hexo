@@ -4,7 +4,7 @@ title: UNSAFE和Java 内存布局
 categories: [java]
 mathjax: true
 date: 2019-11-15
-cover: https://mysticalyu.gitee.io/pic/img/huifeng-huang-upset1-5k.jpg
+cover: https://gschaos.club/ico/img/huifeng-huang-upset1-5k.jpg
 author:
   name: staconfree
   avatar: https://cdn2.jianshu.io/assets/default_avatar/15-a7ac401939dd4df837e3bbf82abaa2a8.jpg

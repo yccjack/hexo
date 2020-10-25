@@ -4,7 +4,7 @@ categories: java
 tags: [java] 
 date: 2020-06-05
 update: 2020-09-10
-cover: https://mysticalyu.gitee.io/pic/img/20200407235505-www-ycfcg-com-2.jpg
+cover: https://gschaos.club/ico/img/20200407235505-www-ycfcg-com-2.jpg
 
 
 ---

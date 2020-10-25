@@ -4,7 +4,7 @@ title: Spring IOC 的世界
 categories: Spring
 tags: [Spring,java]
 date: 2019-09-19 
-cover: https://mysticalyu.gitee.io/pic/img/-dkv01-02.jpg
+cover: https://gschaos.club/ico/img/-dkv01-02.jpg
 
 ---
 

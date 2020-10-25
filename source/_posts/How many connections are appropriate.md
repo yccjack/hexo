@@ -4,7 +4,7 @@ title: 数据库连接池到底应该设多大？这篇文章可能会颠覆你�
 categories:  数据库
 tags: [数据库] 
 date: 2020-08-07
-cover: https://mysticalyu.gitee.io/pic/img/20200407235705-www-ycfcg-com-3.jpg
+cover: https://gschaos.club/ico/img/20200407235705-www-ycfcg-com-3.jpg
 ---
 
 

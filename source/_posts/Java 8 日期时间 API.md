@@ -3,7 +3,7 @@ title: Java 8 日期时间 API
 categories: java 
 tags: [java]
 date: 2019-09-15 
-cover: https://mysticalyu.gitee.io/pic/img/20200407235917-www-ycfcg-com-3.jpg
+cover: https://gschaos.club/ico/img/20200407235917-www-ycfcg-com-3.jpg
 
 ---
 

@@ -4,7 +4,7 @@ categories:  java
 tags: [java]
 date: 2019-12-28 
 mathjax: true
-cover: https://mysticalyu.gitee.io/pic/img/jonathan-romeo-orihime-v2.jpg
+cover: https://gschaos.club/ico/img/jonathan-romeo-orihime-v2.jpg
 sidebar: [grid, toc, tags] # 放置任何你想要显示的侧边栏部件
 ---
 

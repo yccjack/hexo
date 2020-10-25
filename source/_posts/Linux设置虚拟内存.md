@@ -3,7 +3,7 @@ title: Linux设置虚拟内存
 categories: 服务器
 tags: [java,服务器,内存] 
 date: 2020-08-28
-cover: https://mysticalyu.gitee.io/pic/img/20200605013054948.jpg
+cover: https://gschaos.club/ico/img/20200605013054948.jpg
 description: 
 ---
 

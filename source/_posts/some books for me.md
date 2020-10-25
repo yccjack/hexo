@@ -4,7 +4,7 @@ title: 操作系统+网络
 categories: [架构]
 mathjax: true
 date: 2020-03-04
-cover: https://mysticalyu.gitee.io/pic/img_min/a-i-20.jpg
+cover: https://gschaos.club/ico/img/a-i-20.jpg
 
 ---
 
