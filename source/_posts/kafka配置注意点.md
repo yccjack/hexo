@@ -1,6 +1,9 @@
 ---
 title: kafka配置注意点
 cover: https://gschaos.club/ico/img/wayne-wan-.jpg
+categories: kafka
+tags: [kafka,java] 
+date: 2020-11-02
 ---
 
 
