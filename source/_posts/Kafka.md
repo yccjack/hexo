@@ -22,7 +22,7 @@ date: 2020-11-02
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068baafa97c8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/1.png)
 
 
 
@@ -44,7 +44,7 @@ Kafka 是由 `Linkedin` 公司开发的，它是一个分布式的，支持多�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068baff14810?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/2.png)
 
 
 
@@ -56,7 +56,7 @@ Kafka 是由 `Linkedin` 公司开发的，它是一个分布式的，支持多�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068bab005524?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/3.png)
 
 
 
@@ -95,7 +95,7 @@ Kafka 是支持消费者群组的，也就是说 Kafka 中会有一个或者多�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068bb0f1a796?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/4.png)
 
 
 
@@ -103,7 +103,7 @@ Kafka 是支持消费者群组的，也就是说 Kafka 中会有一个或者多�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068bb477c550?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/5.png)
 
 
 
@@ -111,7 +111,7 @@ Kafka 是支持消费者群组的，也就是说 Kafka 中会有一个或者多�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068cc433bb21?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/6.png)
 
 
 
@@ -128,7 +128,7 @@ Kafka 有四个核心API，它们分别是
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068ba7a2fbdd?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/7.png)
 
 
 
@@ -274,7 +274,7 @@ JVM 端配置的另一个重要参数就是垃圾回收器的设置，也就是�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068cd8d08784?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/8.png)
 
 
 
@@ -357,7 +357,7 @@ public ProducerRecord(String topic, K key, V value) {}
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068ce25704e8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/9.png)
 
 
 
@@ -452,7 +452,7 @@ Partitioner 类有三个方法，分别来解释一下
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068cdf11869e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/10.png)
 
 
 
@@ -464,7 +464,7 @@ Partitioner 类有三个方法，分别来解释一下
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068ce25be1db?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/11.png)
 
 
 
@@ -486,7 +486,7 @@ return ThreadLocalRandom.current().nextInt(partitions.size());
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068cdc3ca978?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/12.png)
 
 
 
@@ -560,13 +560,13 @@ acks 参数指定了要有多少个分区副本接收消息，生产者才认为
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068cf4f6ba76?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/13.png)
 
 
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068d4a803cc4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/14.png)
 
 
 
@@ -610,7 +610,7 @@ Kafka 消费者从属于`消费者群组`。一个群组中的消费者订阅的
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068eb30222dc?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/15.png)
 
 
 
@@ -618,7 +618,7 @@ Kafka 消费者从属于`消费者群组`。一个群组中的消费者订阅的
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068f1af13377?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/16.png)
 
 
 
@@ -626,7 +626,7 @@ Kafka 消费者从属于`消费者群组`。一个群组中的消费者订阅的
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb069033019b60?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/17.png)
 
 
 
@@ -634,7 +634,7 @@ Kafka 消费者从属于`消费者群组`。一个群组中的消费者订阅的
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb068f986c4185?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/19.png)
 
 
 
@@ -644,7 +644,7 @@ Kafka 一个很重要的特性就是，只需写入一次消息，可以支持�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb0690843c4d19?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/20.png)
 
 
 
@@ -669,7 +669,7 @@ Kafka 一个很重要的特性就是，只需写入一次消息，可以支持�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb06909972f3f2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/21.png)
 
 
 
@@ -807,7 +807,7 @@ socket 在读写数据时用到的 TCP 缓冲区也可以设置大小。如果�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb0690b6721d0d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/22.png)
 
 
 
@@ -815,7 +815,7 @@ socket 在读写数据时用到的 TCP 缓冲区也可以设置大小。如果�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/11/28/16eb0691023e677e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![img](https://gitee.com/MysticalYu/pic/raw/master/202011/23.png)
 
 
 

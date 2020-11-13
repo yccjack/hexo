@@ -117,7 +117,7 @@ HTTPS 是 HTTP Secure 的缩写，即超文本传输安全协议。此处的 **s
 
 尽管许多浏览器向用户报告混合内容警告，但出现警告时为时已晚：不安全的请求已被执行，且页面的安全性被破坏。遗憾的是，这种情况在网络中很普遍，正因如此，浏览器不能简单地阻止所有混合请求，否则将会限制许多网站的功能。
 
-![混合内容：页面已通过 HTTPS 加载，但请求了不安全的图像。此内容也应通过 HTTPS 提供。](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/imgs/image-gallery-warning.png?hl=zh-cn)修正应用中的混合内容问题是开发者的责任。
+混合内容：页面已通过 HTTPS 加载，但请求了不安全的图像。此内容也应通过 HTTPS 提供。
 
 ### 一个简单的示例
 
@@ -181,7 +181,7 @@ HTTPS 是 HTTP Secure 的缩写，即超文本传输安全协议。此处的 **s
 
 幸运的是，大多数现代浏览器均默认阻止此类危险的内容。 请参阅[具有混合内容的浏览器行为](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content?hl=zh-cn#browser-behavior-with-mixed-content)。
 
-![混合内容：页面已通过 HTTPS 加载，但请求了不安全的脚本。此请求已被阻止，内容必须通过 HTTPS 提供。](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/imgs/simple-mixed-content-error.png?hl=zh-cn)Chrome 可阻止不安全的脚本。
+混合内容：页面已通过 HTTPS 加载，但请求了不安全的脚本。此请求已被阻止，内容必须通过 HTTPS 提供。
 
 ### 一个 XMLHttpRequest 示例
 
@@ -257,7 +257,7 @@ HTTPS 是 HTTP Secure 的缩写，即超文本传输安全协议。此处的 **s
 
 大多数现代浏览器也会阻止这些危险的请求。
 
-![混合内容：页面已通过 HTTPS 加载，但请求了不安全的 XMLHttpRequest 端点。此请求已被阻止，内容必须通过 HTTPS 提供。](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/imgs/xmlhttprequest-mixed-content-error.png?hl=zh-cn)Chrome 可阻止不安全的 XMLHttpRequest。
+混合内容：页面已通过 HTTPS 加载，但请求了不安全的 XMLHttpRequest 端点。此请求已被阻止，内容必须通过 HTTPS 提供。
 
 ### 图像库示例
 
@@ -358,7 +358,7 @@ HTTPS 是 HTTP Secure 的缩写，即超文本传输安全协议。此处的 **s
 
 图像库通常依靠 `<img>` 标记 `src` 属性在页面上显示缩略图，然后，使用定位 (`<a>`) 标记 `href` 属性为图像库叠加层加载完整尺寸的图像。正常情况下，`<a>` 标记不会产生混合内容，但在此例中，jQuery 代码替换默认链接行为（导航到新页面），改为在此页面上加载 **HTTP** 图像。
 
-![混合内容：页面已通过 HTTPS 加载，但请求了不安全的图像。此内容也应通过 HTTPS 提供。](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/imgs/image-gallery-warning.png?hl=zh-cn)
+混合内容：页面已通过 HTTPS 加载，但请求了不安全的图像。此内容也应通过 HTTPS 提供。
 
 不安全的图像会降低网站的安全性，但是它们的危险性与其他类型的混合内容不一样。 现代浏览器仍会加载混合内容图像，但也会向用户显示警告。
 
@@ -444,10 +444,6 @@ HTTPS 是 HTTP Secure 的缩写，即超文本传输安全协议。此处的 **s
 [试一下](https://googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/passive-mixed-content.html)
 
 大多数浏览器仍向用户渲染此类型的混合内容，但是也会显示警告，因为这些内容会给您的网站和用户带来安全风险和隐私风险。
-
-![混合内容：页面已通过 HTTPS 加载，但请求了不安全的视频。此内容也应通过 HTTPS 提供。](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/imgs/passive-mixed-content-warnings.png?hl=zh-cn)来自 Chrome JavaScript 控制台的混合内容警告。
-
-### 主动混合内容
 
 与被动混合内容相比，主动混合内容造成的威胁更大。攻击者可以拦截和重写主动内容，从而完全控制页面，甚至整个网站。这让攻击者可以更改有关页面的任何内容，包括显示完全不同的内容、窃取用户密码或其他登录凭据、窃取用户会话 Cookie，或将用户重定向到一个完全不同的网站。
 
@@ -563,8 +559,6 @@ HTTPS 是 HTTP Secure 的缩写，即超文本传输安全协议。此处的 **s
 ```
 
 [试一下](https://googlesamples.github.io/web-fundamentals/fundamentals/security/prevent-mixed-content/active-mixed-content.html)
-
-![混合内容：页面已通过 HTTPS 加载，但请求了不安全的资源。此请求已被阻止，内容必须通过 HTTPS 提供。](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/imgs/active-mixed-content-errors.png?hl=zh-cn)来自 Chrome JavaScript 控制台的混合内容错误。
 
 ## 具有混合内容的浏览器行为
 
