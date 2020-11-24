@@ -85,7 +85,7 @@ Feed流的分类有很多种，但最常见的分类有两种：
 目前不管是阿里巴巴集团内部，还是外部公有云用户，都有成千上万的系统在使用。覆盖了重吞吐的离线应用，以及重稳定性，性能敏感的在线应用。目前使用的系统中，有些系统每秒写入行数超过`3500万行`，`每秒流量超过5GB`，`单表总行数超过10万亿行`，`单表数据量超过10PB`。
 
 表格存储的具体的特性可以看下面这张图片。
-![tablestore](https://yqfile.alicdn.com/65fb03c38abcf8c4865f3b745d20c132620e49c2.png)
+![tablestore](https://gitee.com/MysticalYu/pic/raw/master/hexo/65fb03c38abcf8c4865f3b745d20c132620e49c2.png)
 
 这里就不详细介绍表格存储(TableStore)的功能和特性了，有兴趣的话可以到官网页面和云栖博客了解，地址如下：
 
@@ -274,7 +274,7 @@ Feed消息有一个最大的特点：
 
 下面我们来看一下使用TableStore的架构图，这里为了通用性，选用推拉结合的方式，推模式更加简单。
 
-![feed_arch](https://yqfile.alicdn.com/ac5465cc451372d20cafeca586a51b7560a46c1c.png)
+![feed_arch](https://gitee.com/MysticalYu/pic/raw/master/hexo/ac5465cc451372d20cafeca586a51b7560a46c1c.png)
 
 ## 存储
 
@@ -401,7 +401,7 @@ Feed消息中至少需要包括下面内容：
 
 ## 架构图
 
-![feed2](https://yqfile.alicdn.com/778795c6c911b155561ad551dfda9d4afee7f842.png)
+![feed2](https://gitee.com/MysticalYu/pic/raw/master/hexo/778795c6c911b155561ad551dfda9d4afee7f842.png)
 
 - 发布新消息
   - 接口：add_activity()
@@ -434,14 +434,14 @@ Feed消息中至少需要包括下面内容：
 
 我们先来看一种架构图：
 
-![rank1](https://yqfile.alicdn.com/996e90e2e725e16ef78e9803898eb5277dcb9f8a.png)
+![rank1](https://gitee.com/MysticalYu/pic/raw/master/hexo/996e90e2e725e16ef78e9803898eb5277dcb9f8a.png)
 
 - 这种Rank方式比较轻量级，适用于推拉结合的场景。
 - 写流程基本一样
 - 读流程里面会先读取所有的Feed内容，这个和Timeline也一样，Timeline里面的话，这里会直接返回给用户，但是Rank类型需要在一个排序模块里面，按照某个属性值排序，然后将所有结果存入一个timeline cache中，并返回分数最高的N个结果，下次读取的时候再返回[N+1, 2N]的结果。
 
 再来看另外一种：
-![rank2](https://yqfile.alicdn.com/f7b38cc6c04fdb16200bdcb559b55190d060df19.png)
+![rank2](https://gitee.com/MysticalYu/pic/raw/master/hexo/f7b38cc6c04fdb16200bdcb559b55190d060df19.png)
 
 - 这种比较重量级，适用于纯推模式。
 - 写流程也和Timeline一样。
